@@ -1,0 +1,44 @@
+.cookie_content {
+    z-index: 50;
+    padding: 2em;
+    border-radius: 50px;
+    width: 90%;
+    background-color: rgba($color: #271B35, $alpha: 0.8);
+    color: #FFF;
+    display: flex;
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+    justify-content: space-between;
+
+    a {
+        color: #FF87F3;
+    }
+
+    .buttons_cookie {
+        display: flex;
+
+        button {
+            font-size: 12px;
+            padding: 1em;
+            font-weight: bold;
+            width: 170px;
+            border-radius: 50px;
+            margin-right: 1em;
+            border: none;
+            cursor: pointer;
+            color: #1F162B;
+
+            &:first-child {
+                color: #1F162B;
+                background-color: #FF87F3;
+            }
+
+            &:last-child {
+                background: transparent;
+                color: #FFF;
+                border: 1px solid #FFF
+            }
+        }
+    }
+}

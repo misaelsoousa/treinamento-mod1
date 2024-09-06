@@ -1,0 +1,113 @@
+.modal_adote {
+    display: block;
+    position: fixed;
+    z-index: 30;
+    right: 5%;
+    top: 20%;
+
+    .modal_content {
+        background-color: #271B35;
+        margin: 10% auto;
+        padding: 20px;
+
+        width: 350px;
+        max-width: 100%;
+        position: relative;
+        text-align: center;
+        color: #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: .5em;
+            margin-top: 1.5em;
+        }
+
+        .modal_detail {
+            padding-bottom: 1em;
+        }
+
+        .modal_icon {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .close {
+
+            position: absolute;
+            top: 5px;
+            right: 15px;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        .close.transformed x-icons {
+            transform: rotate(45deg);
+            /* Rotação de 45 graus ou outra transformação de sua escolha */
+            transition: transform 0.3s ease-in-out;
+        }
+
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 20px;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            padding-left: 20px;
+            color: #555;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .adocao_content {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            padding-block: 2em;
+
+            .arrow_area {
+                cursor: pointer;
+                margin-left: 1em;
+                width: 50px;
+                height: 50px;
+                background-color: #FF87F3;
+                border-radius: 50px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                transition: .2s;
+
+                &:hover {
+                    background-color: #53248F;
+
+                    svg {
+                        path {
+                            fill: #FF87F3;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.minimized_icon {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background-color: #271B35;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    box-shadow: #271B35;
+}

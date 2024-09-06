@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    vertical-align: baseline;
+}
+
+.container {
+    width: 100%;
+    max-width: 1700px;
+    justify-content: center;
+    display: flex;
+}
