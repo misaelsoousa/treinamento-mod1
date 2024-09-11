@@ -5,33 +5,30 @@
     display: flex;
     width: 100%;
     justify-content: center;
+    flex-direction: column;
 
-    .line_detail {
-        position: absolute;
-        left: 0;
-        top: -300px;
-        z-index: 5;
-    }
+
 
     .detail_banner {
         bottom: 99%;
-        z-index: 2;
+        z-index: 1;
         position: absolute;
+        width: 100%;
     }
 
+
     .details_content {
-        background: linear-gradient(90deg, rgba(60, 22, 108, 0.6587009803921569) 0%, rgba(45, 13, 85, 1) 63%);
         margin-top: 5em;
         width: 100%;
-        z-index: 5;
-        backdrop-filter: blur(10px);
         display: flex;
         border-left: 1px solid #FFF;
-        border-bottom: 1px solid #FFF;
+        position: relative;
+        z-index: 3;
+        padding: 0;
 
         &::before {
             content: "";
-            height: 433px;
+            height: 416px;
             width: 1px;
             background-color: white;
             position: absolute;
@@ -39,6 +36,30 @@
             left: -1px;
         }
 
+        .line_detail {
+            position: absolute;
+            left: -150px;
+            top: -155px;
+        }
+
+        .details_blur {
+            margin-top: 5em;
+            width: 100%;
+            display: flex;
+            padding-left: 10em;
+            position: relative;
+            z-index: 3;
+            background: linear-gradient(90deg, rgba(60, 22, 108, 0.6587009803921569) 0%, rgba(45, 13, 85, 1) 63%);
+            backdrop-filter: blur(10px);
+            width: 100%;
+
+        }
+
+        .ong_bg {
+            position: absolute;
+            top: 25%;
+            right: 20%;
+        }
 
         .apoie_content {
             max-width: 1400px;
@@ -56,30 +77,9 @@
                 }
             }
 
-
-            .cat_area {
-
-                margin-left: -.5em;
-                height: 100px;
-                width: 250px;
-                border-radius: 50px;
-                background: linear-gradient(to right, #53248F 10%, #FF87F3 100%);
-                margin-right: .2em;
-                position: relative;
-                display: flex;
-                justify-content: center;
-
-                img {
-                    padding-left: 3em;
-                    position: absolute;
-                    bottom: -52px;
-                }
-            }
-
-
             .btn_details {
                 padding-top: 3em;
-                padding-bottom: 20em;
+                padding-bottom: 12em;
 
                 button {
 
@@ -87,9 +87,142 @@
                     font-size: 20px;
                     padding-inline: 3.5em;
                     padding-block: 1.5em;
-                    border-radius: 0 40px 0 40px;
+                    border-radius: 0 60px 0 60px;
                 }
             }
+        }
+
+        .apoie_cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .card1 {
+                width: 300px;
+                height: 250px;
+                background-color: #461A7E;
+                position: relative;
+                border-radius: 0 0 0 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+
+                p {
+                    padding-top: 1em;
+                    color: #FFF;
+
+                    span {
+                        color: #FF87F3;
+                    }
+                }
+
+
+                .dt1 {
+                    position: absolute;
+                    right: 100%;
+                    top: 0;
+                }
+
+                .dt2 {
+                    position: absolute;
+                    left: 100%;
+                    top: -1%;
+                    transform: rotate(270deg);
+                }
+            }
+
+            .card2 {
+                width: 300px;
+                height: 250px;
+                background-color: #461A7E;
+                position: relative;
+                border-radius: 90px 0 0 0;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                p {
+                    color: #FFF;
+                    padding-top: 1em;
+
+                    span {
+                        color: #FF87F3;
+                    }
+                }
+
+
+
+                .dt2 {
+                    position: absolute;
+                    left: 100%;
+                    bottom: 0;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .info_apoie {
+            width: 500px;
+            align-items: center;
+
+            .cards_info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                color: #FFF;
+                height: 100%;
+                text-align: center;
+                width: 100%;
+
+            }
+
+            .info_card {
+                width: 100%;
+                padding: 62px;
+
+                &:first-child {
+
+                    border-bottom: 1px solid #461A7E;
+                }
+
+                &:last-child {
+                    padding-top: 61px;
+                    border-top: 1px solid #461A7E;
+                }
+
+                p {
+                    position: relative;
+                }
+
+                span {
+                    color: #FF87F3;
+                }
+            }
+        }
+    }
+
+    .foot_info {
+        position: relative;
+        display: flex;
+        border-bottom: 1px solid #FFF;
+        border-left: 1px solid #FFF;
+        align-items: center;
+        height: 250px;
+        justify-content: center;
+
+        h1 {
+            color: #FFF;
+            padding-right: 5em;
+        }
+
+        .foot_icon {
+            position: absolute;
+            right: 20%;
+            top: 30%;
         }
     }
 }

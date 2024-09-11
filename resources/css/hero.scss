@@ -1,49 +1,83 @@
 .content_hero {
-    position: relative;
-    background-color: #000;
-    display: flex;
-    z-index: 0;
-    justify-content: center;
 
     .text_hero {
-        position: absolute;
-        color: #FFF;
-        z-index: 5;
-        bottom: 33%;
-        left: 25%;
+        justify-content: center;
+        color: #ffffff;
+        z-index: 7;
+        white-space: nowrap;
+        font-size: 14px;
+        padding-top: 40em;
+        position: relative;
+        display: flex;
+        padding-right: 40em;
 
-        &::before {
+        p {
+            position: relative;
+
+        }
+
+        p::before {
             content: "";
-            width: 213px;
+            width: 122px;
             height: 1px;
-            background-color: white;
             position: absolute;
-            top: 5px;
             right: 100%;
+            top: 9%;
+            background-color: #FFF;
+            margin-right: 1em;
         }
 
-        &::after {
+        p::after {
             content: "";
-            width: 213px;
+            width: 200px;
             height: 1px;
-            background-color: white;
             position: absolute;
-            top: 4px;
             left: 100%;
+            top: 9%;
+            background-color: #FFF;
+            margin-left: 1em;
         }
     }
 
-    .swiper-pagination {
-        position: absolute;
+    .swiper_hero {
+        background-color: #000;
+        position: relative;
+        width: 100%;
+        left: 0;
         top: 0;
+        height: 100%;
+        padding-bottom: 15em;
+
+        .swiper-pagination {
+            position: absolute;
+            display: flex;
+            justify-content: end;
+            padding-right: 20%;
+
+            .swiper-pagination-bullet {
+                border-radius: 0;
+                border: 2px solid #FFF;
+                width: 12px;
+                height: 12px;
+                background-color: #000;
+                margin-right: 1em;
+            }
+
+            .swiper-pagination-bullet-active {
+                background-color: #FF87F3;
+                border: none;
+            }
+        }
     }
 
-
+    .hero_image {
+        position: absolute;
+        z-index: 0;
+    }
 
     .hero_image::after {
         content: "";
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
-        z-index: 5;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
         position: absolute;
         right: 0;
         top: 0;
@@ -53,36 +87,25 @@
 
     h1 {
         color: #FFF;
-        position: absolute;
         font-size: 90px;
-        z-index: 6;
+        z-index: 3;
+        white-space: nowrap;
         top: 30%;
         left: 30%;
+        position: absolute;
 
-        .cat_area {
+        span {
             display: flex;
-
-            .cat_img {
-                margin-left: -.5em;
-                height: 100px;
-                width: 250px;
-                border-radius: 50px;
-                background: linear-gradient(to right, #FF87F3 0%, #53248F 100%);
-                margin-right: .2em;
-                position: relative;
-
-
-
-                img {
-                    position: absolute;
-                    bottom: -1px;
-                    right: 0;
-                }
-            }
         }
+
     }
 
-
-
-
+    button {
+        white-space: nowrap;
+        position: relative;
+        height: 100%;
+        left: 0;
+        margin-top: 10px;
+        margin-left: 200px;
+    }
 }

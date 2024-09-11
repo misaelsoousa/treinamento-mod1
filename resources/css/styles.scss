@@ -4,9 +4,12 @@
 @import 'details.scss';
 @import 'modal.scss';
 @import 'cookies.scss';
+@import 'adocao.scss';
+@import 'history.scss';
+@import 'faq.scss';
 
 .btn_app {
-    position: absolute;
+    position: relative;
     border: 1px solid white;
     background-color: transparent;
     color: white;
@@ -16,12 +19,54 @@
     justify-content: center;
     font-size: 30px;
     transition: .5s;
-    bottom: 25%;
-    right: 40%;
     z-index: 20;
     cursor: pointer;
 }
 
 .btn_app:hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+.cat_area {
+    display: flex;
+
+    .cat_img {
+        margin-left: -.5em;
+        height: 100px;
+        width: 250px;
+        border-radius: 50px;
+        background: linear-gradient(to right, #FF87F3 0%, #53248F 100%);
+        margin-right: .2em;
+        position: relative;
+
+
+
+        img {
+            position: absolute;
+            bottom: -1px;
+            right: 0;
+        }
+    }
+}
+
+
+.cat_area2 {
+
+    margin-left: -.5em;
+    height: 100px;
+    width: 250px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #53248F 10%, #FF87F3 100%);
+    margin-right: .2em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    img {
+        padding-left: 3em;
+        position: absolute;
+        bottom: -52px;
+    }
 }

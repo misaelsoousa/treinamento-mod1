@@ -1,0 +1,79 @@
+.history {
+    position: relative;
+
+    .pata_grande {
+        position: absolute;
+        top: -200px;
+        left: 200px;
+    }
+
+    .top_history {
+        padding-left: 50%;
+    }
+
+    .swiper_history {
+        width: 100%;
+        padding: 50px 0;
+        padding-top: 190px;
+
+
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            &:first-child {
+                padding-left: 30em;
+                padding-right: 30em;
+            }
+
+            .timeline_content {
+                margin: 0 auto;
+                text-align: start;
+
+
+
+                .timeline_title {
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                }
+
+                .top_title {
+                    padding: 5px;
+                }
+
+                img {
+
+                    width: 235px;
+                    height: 205px;
+                    border-radius: 8px;
+
+                }
+
+                h2 {
+                    font-size: 35px;
+                    padding-top: .5em;
+
+                }
+
+                .top_title {
+                    padding-top: 4em;
+                    padding-bottom: 2em;
+
+                    h2 {}
+                }
+
+                p {
+                    max-width: 300px;
+                    margin: 0 auto;
+                    font-size: 16px;
+                    color: #333;
+                }
+
+
+            }
+        }
+    }
+}

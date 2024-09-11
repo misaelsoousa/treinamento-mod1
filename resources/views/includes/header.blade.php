@@ -2,39 +2,36 @@
     <div class="logo_navbar">
         <x-icons path="logo.svg" />
     </div>
-    <div class="navbar_scroll">
-        <x-icons path="logoNavbar.svg" />
-    </div>
     <ul class="navbar container">
+        <div class="navbar_scroll">
+            <x-icons path="logoNavbar.svg" />
+        </div>
         <li class="item_navbar">
-            <a href="#">Home</a>
+            <a class="link_navbar" href="#">Home</a>
         </li>
         <li class="item_navbar">
-            <a href="#">Quem Somos</a>
+            <a class="link_navbar" href="#">Quem Somos</a>
         </li>
-        <li class="item_navbar dropdown_item">
-            <a href="#" class="navbar_link">Encontrar gatinhos</a>
-            <ul class="dropdown">
-                <li>
-                    1
-                </li>
-                <li>
-                    2
-                </li>
-                <li>
-                    3
-                </li>
-                <li>
-                    4
-                </li>
+        <li class="item_navbar">
+            <a class="link_navbar dropdown_toggle">Encontrar gatinhos</a>
+            <ul class="dropdown_menu">
+                <li class="dropdown_item"><a href="#">Lorem Ipsum</a></li>
+                <li class="dropdown_item"><a href="#">Lorem Ipsum</a></li>
+                <li class="dropdown_item"><a href="#">Lorem Ipsum</a></li>
+                <li class="dropdown_item showMenu menu_toogle"><a href="#">Lorem Ipsum</a>
 
+                </li>
+                <ul class="drop_menu">
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                </ul>
             </ul>
         </li>
         <li class="item_navbar">
-            <a href="#">Blog</a>
+            <a class="link_navbar" href="#">Blog</a>
         </li>
         <li class="item_navbar">
-            <a href="#">Contato</a>
+            <a class="link_navbar" href="#">Contato</a>
         </li>
 
         <li class="item_navbar">
@@ -52,7 +49,7 @@
         </li>
 
         <li class="item_navbar">
-            <button>Quero Adotar um gatinho
+            <button class="btn_adotar">Quero Adotar um gatinho
                 <x-icons path="paw.svg" />
             </button>
         </li>

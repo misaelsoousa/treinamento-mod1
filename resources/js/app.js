@@ -1,14 +1,51 @@
 import './bootstrap';
+import 'bootstrap';
 import Swiper from 'swiper';
 import { Navigation, Pagination, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/effect-fade'; // Importe o CSS do efeito de fade
-// swiper(slider)
+import 'swiper/css/effect-fade';
+
+//dropdown hero
+var dropdownToggle = document.getElementsByClassName("dropdown_toggle")[0];
+var menuToogle = document.getElementsByClassName("menu_toogle")[0];
+var dropdownMenu = document.getElementsByClassName("dropdown_menu")[0];
+var nestedDropdownMenu = document.getElementsByClassName("drop_menu")[0];
+
+dropdownToggle.onclick = function () {
+    if (dropdownMenu.style.display === 'block' || dropdownMenu.style.display === '') {
+        dropdownMenu.style.display = 'none';
+        dropdownToggle.style.backgroundColor = 'transparent';
+        menuToogle.style.backgroundColor = 'transparent';
+        nestedDropdownMenu.style.display = 'none';
+    } else {
+        dropdownMenu.style.display = 'block';
+        dropdownToggle.style.backgroundColor = '#53248F';
+    }
+};
+
+menuToogle.onclick = function () {
+    if (nestedDropdownMenu.style.display === 'block' || nestedDropdownMenu.style.display === '') {
+        nestedDropdownMenu.style.display = 'none';
+        menuToogle.style.backgroundColor = 'transparent';
+    } else {
+        nestedDropdownMenu.style.display = 'block';
+        menuToogle.style.backgroundColor = '#53248F';
+
+        if (dropdownMenu.style.display === 'none') {
+            dropdownMenu.style.display = 'block';
+            dropdownToggle.style.backgroundColor = '#53248F';
+        }
+    }
+};
+
+
+// swiper hero
+
 document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.swiper', {
-        modules: [Navigation, Pagination, EffectFade],
+    const swiper = new Swiper('.swiper_hero', {
+        modules: [Pagination, EffectFade],
         loop: true,
         effect: 'fade',
         autoplay: true,
@@ -21,6 +58,24 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 });
+
+// swiper history
+document.addEventListener('DOMContentLoaded', function () {
+
+    const timelineSlider = new Swiper('.swiper_history', {
+        modules: [Navigation, EffectFade],
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            clickable: true,
+        },
+
+    });
+});
+
 // navbar
 document.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar_content');
