@@ -1,0 +1,165 @@
+.missao {
+    padding-top: 10em;
+
+    h2 {
+        font-family: 'SFRepublic';
+        font-weight: bold;
+        font-size: 80px;
+    }
+
+    .icon_circle {
+        content: '';
+        width: 110px;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(90deg, rgba(229, 229, 229, 1) 0%, rgba(229, 229, 229, 0) 85%);
+        border-radius: 50%;
+
+        .icon_white {
+            width: 90px;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .icon_area {
+            width: 70px;
+            height: 70px;
+            background-color: #461A7E;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+
+            svg {
+
+                padding: 15px;
+            }
+        }
+    }
+
+    .left_content {
+        .left_top {
+            width: 400px;
+            height: 400px;
+            background-color: #FFF0FE;
+            border-radius: 12px;
+            position: relative;
+
+            h2 {
+                position: absolute;
+                top: 20%;
+                right: -45%;
+            }
+
+            .cat_area {
+                .cat_area2 {
+
+                    position: absolute;
+                    bottom: 10%;
+                    right: -20%;
+                    background: linear-gradient(to right, #53248F 0%, #FF87F3 200%);
+                    width: 320px;
+                    transform: scaleX(-1);
+                    height: 105px;
+
+                    img {
+                        bottom: -45px;
+                    }
+                }
+            }
+        }
+
+        .left_bottom {
+
+            width: 300px;
+            padding-left: 3em;
+            padding-top: 1.5em;
+
+        }
+    }
+
+    .mid_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+
+        .mid_top {
+            width: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 4em;
+
+            .icon_circle {
+                margin-bottom: 3em;
+            }
+
+            p {
+
+                width: 300px;
+            }
+        }
+
+        .mid_bottom {
+            margin-top: 5em;
+            border-radius: 12px;
+            width: 800px;
+            height: 400px;
+            background-color: #FFF0FE;
+            position: relative;
+
+            .cat_sobre {
+                position: absolute;
+                bottom: -60%;
+                left: -15%;
+            }
+        }
+    }
+
+    .right_content {
+        z-index: 2;
+
+        .right_top {
+            width: 400px;
+            height: 400px;
+            background-color: #FFF0FE;
+            border-radius: 12px;
+            position: relative;
+
+            h2 {
+                position: absolute;
+                bottom: 0;
+                transform: translateY(50%);
+                left: 15%;
+            }
+
+            .cat_area {
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+        }
+
+        .right_bottom {
+
+            width: 300px;
+            padding-top: 5em;
+            padding-left: 3em;
+
+            .icon_circle {
+                margin-top: 2em;
+                margin-left: 2em;
+            }
+        }
+    }
+}

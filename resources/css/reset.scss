@@ -2,14 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
     vertical-align: baseline;
 }
 
 .container {
     width: 100%;
     max-width: 1700px;
-
+    padding: 0;
     display: flex;
     margin: 0 auto;
 }

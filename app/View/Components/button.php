@@ -10,9 +10,10 @@ class button extends Component
 {
     public $text;
 
-    public function __construct($text = 'Quero Adotar')
+    public function __construct($text = 'Quero Adotar', $paw = 'false')
     {
         $this->text = $text;
+        $this->paw = $paw;
     }
 
     /**

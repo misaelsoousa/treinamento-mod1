@@ -1,7 +1,6 @@
 <div class="details">
-    <img class="detail_banner" src="img/detailBanner.png">
-    <div class="container">
-
+    <div class="detail_banner">
+        <x-icons path="detailBanner.svg" />
     </div>
     <div class="details_content container">
 
@@ -20,11 +19,14 @@
                 </h1>
                 <p>Existem muitos <span> gatos a espera de um lar </span> </br> e com muito amor para oferecer.</p>
                 <div class="btn_details">
-                    <x-button text="Apoie agora mesmo!" />
+                    <x-button>
+                        Apoie agora mesmo!
+                    </x-button>
                 </div>
             </div>
             <div class="apoie_cards">
                 <div class="card1">
+                    <x-icons path="catTransparent.svg" />
                     <p>Mais de <span> 5.4mil </br>
                             gatinhos adotados </span> </br>
                         desde 2016 em todo </br>
@@ -48,6 +50,7 @@
                 <div class="cards_info">
 
 
+
                     <div class="info_card">
                         <x-icons path="infoCat.svg" />
                         <p><span>+1.2</span> mil gatinhos</br> adotados em 2024</p>
@@ -65,6 +68,10 @@
             </div>
         </div>
     </div>
+    <div class="adocao_detail">
+        <x-icons path="adocao.svg" />
+    </div>
+
     <div class="container foot_info">
 
         <h1>Gatos para adoção</h1>
@@ -73,5 +80,8 @@
             <x-cat-area />
         </div>
     </div>
-</div>
+
+    <div class="lines_adocao">
+        <x-icons path="linesAdocao.svg" />
+    </div>
 </div>

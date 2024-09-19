@@ -1,5 +1,4 @@
 .details {
-
     background-color: #461A7E;
     position: relative;
     display: flex;
@@ -7,15 +6,26 @@
     justify-content: center;
     flex-direction: column;
 
-
-
     .detail_banner {
-        bottom: 99%;
-        z-index: 1;
-        position: absolute;
-        width: 100%;
+        svg {
+
+            top: -6%;
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+        }
     }
 
+    .lines_adocao {
+        position: absolute;
+        right: 0;
+    }
+
+    .adocao_detail {
+        left: 15%;
+        bottom: -20%;
+        position: absolute;
+    }
 
     .details_content {
         margin-top: 5em;
@@ -28,7 +38,7 @@
 
         &::before {
             content: "";
-            height: 416px;
+            height: 427px;
             width: 1px;
             background-color: white;
             position: absolute;
@@ -52,6 +62,8 @@
             background: linear-gradient(90deg, rgba(60, 22, 108, 0.6587009803921569) 0%, rgba(45, 13, 85, 1) 63%);
             backdrop-filter: blur(10px);
             width: 100%;
+
+
 
         }
 
@@ -77,9 +89,12 @@
                 }
             }
 
+            h1 {
+                font-family: 'SFRepublic';
+            }
+
             .btn_details {
                 padding-top: 3em;
-                padding-bottom: 12em;
 
                 button {
 
@@ -99,7 +114,7 @@
 
             .card1 {
                 width: 300px;
-                height: 250px;
+                height: 274px;
                 background-color: #461A7E;
                 position: relative;
                 border-radius: 0 0 0 90px;
@@ -128,14 +143,14 @@
                 .dt2 {
                     position: absolute;
                     left: 100%;
-                    top: -1%;
+                    top: 0;
                     transform: rotate(270deg);
                 }
             }
 
             .card2 {
                 width: 300px;
-                height: 250px;
+                height: 274px;
                 background-color: #461A7E;
                 position: relative;
                 border-radius: 90px 0 0 0;
@@ -217,6 +232,7 @@
         h1 {
             color: #FFF;
             padding-right: 5em;
+            font-family: 'SFRepublic';
         }
 
         .foot_icon {
@@ -225,4 +241,59 @@
             top: 30%;
         }
     }
+}
+
+body.dark-mode {
+
+    .details {
+
+        background-color: #2D0D55;
+
+        .details_blur {
+            background: linear-gradient(90deg, rgba(36, 13, 65, 0.659) 0%, rgb(29, 8, 54) 63%);
+
+
+        }
+
+        .detail_banner {
+            svg {
+                path {
+
+                    fill: #2D0D55;
+                }
+            }
+        }
+
+        .details_content {
+            .apoie_cards {
+
+                .card1,
+                .card2 {
+                    background-color: #2D0D55;
+
+                    .dt1,
+                    .dt2 {
+                        svg {
+                            path {
+                                fill: #2D0D55;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .info_apoie {
+                .info_card {
+                    &:first-child {
+                        border-bottom: 1px solid #2D0D55;
+                    }
+
+                    &:last-child {
+                        border-top: 1px solid #2D0D55;
+                    }
+                }
+            }
+        }
+    }
+
 }

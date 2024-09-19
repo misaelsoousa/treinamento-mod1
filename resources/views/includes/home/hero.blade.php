@@ -1,5 +1,3 @@
-@extends('layout.app')
-
 <div class="content_hero ">
 
     <div class="swiper swiper_hero">
@@ -20,7 +18,9 @@
                 <div class="container text_hero">
 
                     <p>Conheça nossos gatinhos</p>
-                    <x-button />
+                    <x-button>
+                        Quero adotar
+                    </x-button>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -39,7 +39,9 @@
                 <div class="container text_hero">
 
                     <p>Conheça nossos gatinhos</p>
-                    <x-button />
+                    <x-button>
+                        Quero adotar
+                    </x-button>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -58,7 +60,9 @@
                 <div class="container text_hero">
 
                     <p>Conheça nossos gatinhos</p>
-                    <x-button />
+                    <x-button>
+                        Quero adotar
+                    </x-button>
                 </div>
             </div>
             <div class="swiper-pagination"></div>

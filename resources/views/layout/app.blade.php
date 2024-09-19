@@ -12,12 +12,13 @@
 
     @vite('resources/css/styles.scss')
     @stack('icons')
-    @vite('resources/js/app.js')
 </head>
 
 <body>
 
     @yield('content')
+    @vite('resources/js/app.js')
+
 </body>
 
 </html>

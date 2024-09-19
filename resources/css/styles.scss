@@ -7,6 +7,16 @@
 @import 'adocao.scss';
 @import 'history.scss';
 @import 'faq.scss';
+@import 'depoimentos.scss';
+@import 'clientes.scss';
+@import 'footerHome.scss';
+@import 'heroSobre.scss';
+@import 'estrutura.scss';
+@import 'missao.scss';
+@import 'footerGeral.scss';
+@import 'heroListagem.scss';
+
+
 
 .btn_app {
     position: relative;
@@ -19,7 +29,7 @@
     justify-content: center;
     font-size: 30px;
     transition: .5s;
-    z-index: 20;
+    z-index: 1;
     cursor: pointer;
 }
 
@@ -69,4 +79,20 @@
         position: absolute;
         bottom: -52px;
     }
+}
+
+* {
+    font-family: "Roboto";
+}
+
+@font-face {
+    font-family: 'SFRepublic';
+    src: url('../assets/fonts/newRepublic.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.history_sobre {
+    margin-top: 30em;
+
 }

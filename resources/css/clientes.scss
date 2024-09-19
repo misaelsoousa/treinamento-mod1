@@ -1,0 +1,67 @@
+.clientes {
+    padding-bottom: 20em;
+    position: relative;
+
+    .swiper_clientes {
+        width: 100%;
+        max-width: 1920px;
+        width: 100%;
+        position: relative;
+
+        .title_clientes {
+            position: absolute;
+            z-index: 2;
+            left: 20%;
+
+            h2 {
+                font-family: 'SFRepublic', sans-serif;
+            }
+
+            p {
+                font-family: "Roboto", sans-serif;
+            }
+        }
+
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+
+            .lines_clientes {
+
+                img {
+                    max-width: 275px;
+                    max-height: 274px;
+                }
+
+                .first_line {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .right_line {
+                        display: flex;
+
+                        img:first-child {
+                            margin-right: 270px;
+                        }
+                    }
+                }
+
+                .second_line {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+
+                .third_line {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+
+    }
+
+
+}

@@ -1,4 +1,6 @@
 <button class="btn_app">
-    {{$text}}
-    <x-icons path="paw.svg" />
+    {{$slot}}
+    @if (!isset($paw) || $paw !== 'false')
+        <x-icons path="paw.svg" />
+    @endif
 </button>

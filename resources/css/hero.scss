@@ -22,7 +22,7 @@
             height: 1px;
             position: absolute;
             right: 100%;
-            top: 9%;
+            top: 10%;
             background-color: #FFF;
             margin-right: 1em;
         }
@@ -33,7 +33,7 @@
             height: 1px;
             position: absolute;
             left: 100%;
-            top: 9%;
+            top: 10%;
             background-color: #FFF;
             margin-left: 1em;
         }
@@ -93,8 +93,10 @@
         top: 30%;
         left: 30%;
         position: absolute;
+        font-family: 'SFRepublic';
 
         span {
+            font-family: 'SFRepublic';
             display: flex;
         }
 

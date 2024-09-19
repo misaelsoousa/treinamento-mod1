@@ -2,13 +2,13 @@
     <div class="pata_grande">
         <x-icons path="pataGrande.svg" />
     </div>
+    <div class="top_history">
+        <h1>Nossa história</h1>
+        <p>Existem muitos <span> gatos a espera de um lar </span> e com muito amor para </br>oferecer. Nós fazemos
+            essa ponte
+            para que você adote um amigo</br> e faça a diferença na vida de um animal carente.</p>
+    </div>
     <div class="history_content">
-        <div class="top_history">
-            <h1>Conheça a </br>
-                ONG TinieBird Cats</h1>
-            <p>Existem muitos gatos a espera de um lar e com muito amor para </br>oferecer. Nós fazemos essa ponte
-                para que você adote um amigo</br> e faça a diferença na vida de um animal carente.</p>
-        </div>
         <div class="swiper swiper_history">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -27,7 +27,6 @@
                     <div class="timeline_content">
                         <div class="timeline_title">
                             <div class="top_title">
-
                                 <h2>2017</h2>
                             </div>
                             <img src="img/timeLine2.png" alt="Image 2017">
@@ -94,7 +93,16 @@
 
 
             </div>
+            <div class="timeline_next">
+                <p>2015</p>
+                <p>2013</p>
+                <p>2012</p>
+                <p>2011</p>
+                <p>2008</p>
+                <p>2001</p>
+                <p>1998</p>
 
+            </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>

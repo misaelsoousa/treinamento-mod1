@@ -7,6 +7,53 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
+
+//Listagem e paginação
+document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.btn_navbar');
+    const items = document.querySelectorAll('.item_list');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function () {
+            const cidadeSelecionada = this.dataset.cidade;
+
+            if (this.classList.contains('selected')) {
+                items.forEach(item => item.style.display = 'block');
+                this.classList.remove('selected');
+            } else {
+                buttons.forEach(btn => btn.classList.remove('selected'));
+
+                if (cidadeSelecionada === 'todos') {
+                    items.forEach(item => item.style.display = 'block');
+                } else {
+                    items.forEach(item => {
+                        if (item.dataset.cidade === cidadeSelecionada) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                }
+                this.classList.add('selected');
+            }
+        });
+    });
+});
+
+//thumbnail
+document.addEventListener("DOMContentLoaded", function () {
+
+    var thumb = document.getElementById('thumb');
+
+    thumb.addEventListener('click', function () {
+        thumb.style.display = 'none';
+        var player = document.getElementById('player');
+        player.style.display = 'block';
+        var iframe = document.getElementById('youtube-video');
+        iframe.src += "&autoplay=1&mute=1";
+    });
+});
+
 //dropdown hero
 var dropdownToggle = document.getElementsByClassName("dropdown_toggle")[0];
 var menuToogle = document.getElementsByClassName("menu_toogle")[0];
@@ -75,6 +122,38 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 });
+
+// swiper depoimentos
+document.addEventListener('DOMContentLoaded', function () {
+
+    const timelineSlider = new Swiper('.swiper_depoimentos', {
+        modules: [Navigation, EffectFade],
+        slidesPerView: 3,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            clickable: true,
+        },
+
+    });
+});
+
+// swiper clientes
+document.addEventListener('DOMContentLoaded', function () {
+
+    const timelineSlider = new Swiper('.swiper_clientes', {
+        modules: [Pagination, EffectFade],
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+    });
+});
+
 
 // navbar
 document.addEventListener('scroll', function () {
@@ -146,3 +225,10 @@ for (var i = 0; i < cookieBtns.length; i++) {
         }
     };
 }
+
+
+
+
+
+
+
