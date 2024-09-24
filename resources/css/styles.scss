@@ -15,8 +15,9 @@
 @import 'missao.scss';
 @import 'footerGeral.scss';
 @import 'heroListagem.scss';
-
-
+@import 'listagemGatos.scss';
+@import 'heroDetalhes';
+@import 'heroBlog';
 
 .btn_app {
     position: relative;
@@ -41,6 +42,7 @@
 
 .cat_area {
     display: flex;
+
 
     .cat_img {
         margin-left: -.5em;
@@ -95,4 +97,39 @@
 .history_sobre {
     margin-top: 30em;
 
+}
+
+.hero_text_component {
+    position: absolute;
+    color: #FFF;
+    top: 30%;
+    z-index: 2;
+    left: calc(5% + 180px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    svg {
+        margin-top: 1.5em;
+    }
+
+    &::after {
+        content: '';
+        width: 180px;
+        height: 1px;
+        background-color: #FFF;
+        position: absolute;
+        left: 150%;
+        top: 10px;
+    }
+
+    &::before {
+        content: '';
+        width: 180px;
+        height: 1px;
+        background-color: #FFF;
+        position: absolute;
+        right: 150%;
+        top: 10px;
+    }
 }

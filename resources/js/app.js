@@ -7,11 +7,45 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
+//swiper detalhes
+document.addEventListener('DOMContentLoaded', function () {
+
+    const timelineSlider = new Swiper('.swiper_detalhes', {
+        modules: [Navigation, EffectFade],
+        slidesPerView: 4,
+        loop: true,
+        spaceBetween: 5,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            clickable: true,
+        },
+
+    });
+});
+
+// swiper listagem
+document.addEventListener('DOMContentLoaded', function () {
+
+    const timelineSlider = new Swiper('.swiper_listagem', {
+        modules: [Navigation, EffectFade],
+        slidesPerView: 5,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            clickable: true,
+        },
+
+    });
+});
+
 
 //Listagem e paginação
+
 document.addEventListener('DOMContentLoaded', function () {
     const buttons = document.querySelectorAll('.btn_navbar');
-    const items = document.querySelectorAll('.item_list');
+    const items = document.querySelectorAll('.item_list, .item_middle');
 
     buttons.forEach(button => {
         button.addEventListener('click', function () {
@@ -41,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //thumbnail
+
 document.addEventListener("DOMContentLoaded", function () {
 
     var thumb = document.getElementById('thumb');
@@ -55,6 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //dropdown hero
+
 var dropdownToggle = document.getElementsByClassName("dropdown_toggle")[0];
 var menuToogle = document.getElementsByClassName("menu_toogle")[0];
 var dropdownMenu = document.getElementsByClassName("dropdown_menu")[0];
@@ -86,7 +122,6 @@ menuToogle.onclick = function () {
         }
     }
 };
-
 
 // swiper hero
 
@@ -153,6 +188,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 });
+
+
 
 
 // navbar

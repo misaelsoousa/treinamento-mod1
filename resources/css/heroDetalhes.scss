@@ -1,0 +1,333 @@
+.detalhes {
+
+    .hero_detalhes {
+        background-color: #461A7E;
+        position: relative;
+
+        .text_hero {
+            display: flex;
+            padding-bottom: 20em;
+            padding-top: 13%;
+            padding-left: calc(5% + 600px);
+
+            h2 {
+                color: #FFF;
+                font-size: 75px;
+                padding-inline: 3.5em;
+                font-family: 'SFRepublic';
+                font-weight: bold;
+            }
+        }
+
+        .swiper_detalhes {
+            position: relative;
+
+            .swiper-slide {
+                height: 500px;
+                position: relative;
+
+
+                .zoom {
+                    bottom: 1em;
+                    right: 1em;
+                    position: absolute;
+                    height: 50px;
+                    width: 50px;
+                    background-color: rgba($color: #FFF, $alpha: .5);
+                    cursor: pointer;
+                    border-radius: 50%;
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+
+                    svg {
+                        z-index: 5;
+
+                    }
+                }
+
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+
+                    &:hover+.zoom {
+                        display: flex;
+                    }
+                }
+
+                .doble_slide {
+                    height: 100%;
+
+                    img {
+                        height: 50%;
+                        width: 100%;
+                        object-fit: contain;
+                        object-fit: cover;
+
+                        &:last-child {
+                            margin-top: 7px;
+                            height: 50%;
+                        }
+
+
+                    }
+                }
+
+            }
+
+            .swiper-button-next {
+                position: absolute;
+                right: calc(25% - 35px);
+                height: 80px;
+                width: 30px;
+                background-color: #FFF;
+                border-radius: 0 20px 20px 0;
+
+                &::after {
+                    content: '';
+                    background-image: url('../assets/icons/swiperDetalhes.svg');
+                    background-position: center;
+                    height: 30px;
+                    width: 30px;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            .swiper-button-prev {
+                position: absolute;
+                left: calc(25% - 35px);
+                height: 80px;
+                width: 30px;
+                background-color: #FFF;
+                border-radius: 20px 0 0 20px;
+
+                &::after {
+                    content: '';
+                    background-image: url('../assets/icons/swiperDetalhes.svg');
+                    transform: scaleX(-1);
+                    background-position: center;
+                    height: 30px;
+                    width: 30px;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+
+        .hero_description {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-block: 2em;
+
+            div {
+                color: #FFF;
+            }
+
+            .first_item {
+                display: flex;
+                align-items: center;
+
+                h2 {
+                    padding-left: 1em;
+                    font-size: 40px;
+                }
+            }
+
+            .card_gender {
+                border: 1px solid #FFF;
+                background-color: #461A7E;
+                position: absolute;
+                color: #FFF;
+                left: 20%;
+                bottom: 0;
+                transform: translateY(50%);
+                padding: .3em 1em;
+                border-radius: 10px;
+            }
+
+            .energetico {
+                svg {
+                    path {
+                        fill: #FF87F3;
+                    }
+                }
+            }
+        }
+    }
+
+    .detalhes_content {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding-top: 3em;
+
+        .title_content {
+            display: flex;
+            position: relative;
+            padding-bottom: 2em;
+
+            &::after {
+                content: '';
+                width: 100%;
+                height: 1px;
+                position: absolute;
+                bottom: -5%;
+                background-color: #CCCCCC;
+            }
+        }
+
+        .history_content {
+            padding-top: 2em;
+            position: relative;
+            padding-bottom: 2em;
+
+            &::after {
+                content: '';
+                width: 100%;
+                height: 1px;
+                position: absolute;
+                bottom: 0;
+                background-color: #CCCCCC;
+            }
+
+            h2 {
+                font-family: 'SFRepublic';
+                padding-bottom: 1em;
+                font-weight: bold;
+            }
+        }
+
+        .tags_cat {
+            padding-top: 2em;
+
+            .tags_content {
+                display: flex;
+                background-color: #FFF;
+                width: 1100px;
+                flex-wrap: wrap;
+                padding-top: 2em;
+
+
+                .tags {
+                    display: flex;
+
+                    p {
+                        background-color: #E4E0EB;
+                        padding: .3em 2em;
+                        border-radius: 12px;
+                        white-space: nowrap;
+                        margin-right: .5em;
+                    }
+                }
+            }
+        }
+    }
+
+    .cat_area2 {
+        display: flex;
+        max-width: 1100px;
+        justify-content: end;
+        margin: 0 auto;
+        margin-top: 5em;
+
+        .cat_img {
+            margin-left: -.5em;
+            height: 100px;
+            width: 250px;
+            border-radius: 50px;
+            background: linear-gradient(to right, #FF87F3 -50%, #53248F 100%);
+            margin-right: .2em;
+            position: relative;
+            padding: 0 21em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            p {
+                white-space: nowrap;
+                color: #FFF;
+                font-size: 40px;
+                position: absolute;
+                left: 2em;
+                top: .5em;
+                font-family: 'SFRepublic';
+            }
+
+            svg {
+                width: 25px;
+                height: auto;
+
+                path {
+                    fill: #FF87F3;
+                }
+            }
+
+            img {
+                position: absolute;
+                bottom: -1px;
+                right: 0;
+            }
+        }
+    }
+
+    .recomendacao {
+        max-width: 1100px;
+        margin: 0 auto;
+        margin-top: 5em;
+
+        h2 {
+            margin-bottom: 2em;
+            font-family: 'SFRepublic';
+            font-weight: bold;
+        }
+
+        .recomendacao_content {
+            display: flex;
+
+            .card_cat {
+                margin-right: 3em;
+
+                svg {
+                    margin-right: 1.5em;
+
+                    path {
+                        fill: #330A66;
+                    }
+                }
+
+                .info_cat {
+                    display: flex;
+                    color: #202020;
+                    margin-bottom: 2em;
+                    margin-top: 3em;
+
+                    h1 {
+                        font-size: 25px;
+                    }
+
+                    p {
+
+                        padding: 0;
+                        margin: 0;
+                        font-size: 12px;
+                    }
+
+
+                    span {
+                        margin: 0;
+
+                        svg {
+                            margin-right: .5em;
+
+                            path {
+                                fill: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

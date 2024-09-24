@@ -9,6 +9,6 @@
 @include ('includes.home.depoimentos')
 @include ('includes.home.clientes')
 @include('includes.home.footerHome')
-<!-- @include ('includes.home.modal')
-@include ('includes.home.cookies') -->
+@include ('includes.home.modal')
+@include ('includes.home.cookies')
 @stop

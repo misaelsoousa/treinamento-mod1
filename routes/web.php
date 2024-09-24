@@ -13,3 +13,12 @@ Route::get('/encontrar-gatinhos', function () {
     return view('pages.listagem');
 });
 
+Route::get('/detalhes', function () {
+    return view('pages.detalhes');
+});
+
+Route::get('/blog', function () {
+    return view('pages.blog');
+});
+
+

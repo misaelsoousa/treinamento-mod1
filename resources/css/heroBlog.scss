@@ -1,0 +1,28 @@
+.blog {
+    .hero_blog {
+        position: relative;
+
+        .hero_image {
+            img {
+
+                width: 100vw;
+            }
+        }
+
+        .text_hero {
+            position: absolute;
+            top: 45%;
+            display: flex;
+            left: 45%;
+            color: #FFF;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                font-size: 100px;
+                font-family: 'SFRepublic';
+                margin-right: 3em;
+            }
+        }
+    }
+}

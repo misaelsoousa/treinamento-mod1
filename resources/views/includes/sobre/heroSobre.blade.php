@@ -1,4 +1,7 @@
 <div class="hero_sobre">
+    <x-hero-text>
+        Conheça a Ong
+    </x-hero-text>
     <div class="hero_image">
         <img src="img/heroSobreImage.png" />
     </div>
