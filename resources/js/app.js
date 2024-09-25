@@ -10,6 +10,25 @@ import 'swiper/css/effect-fade';
 //swiper detalhes
 document.addEventListener('DOMContentLoaded', function () {
 
+    const timelineSlider = new Swiper('.swiper_blog', {
+        modules: [Navigation, EffectFade],
+        slidesPerView: 3,
+        loop: true,
+        spaceBetween: 50,
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            clickable: true,
+        },
+
+    });
+});
+
+
+//swiper detalhes
+document.addEventListener('DOMContentLoaded', function () {
+
     const timelineSlider = new Swiper('.swiper_detalhes', {
         modules: [Navigation, EffectFade],
         slidesPerView: 4,

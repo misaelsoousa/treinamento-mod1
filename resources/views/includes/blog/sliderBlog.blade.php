@@ -1,49 +1,114 @@
-<div>
-    <div class="swiper swiper_detalhes">
+<div class="blog">
+    <div class="swiper swiper_blog">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="img/detalhesImg.png" alt="">
-                <div class="zoom">
-                    <x-icons path="zoomIcone.svg" />
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <img src="img/detalhesImg.png" alt="">
-                <div class="zoom">
-                    <x-icons path="zoomIcone.svg" />
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="doble_slide">
-                    <img src="img/detalhesImg.png" alt="">
-                    <img src="img/detalhesImg.png" alt="">
-                    <div class="zoom">
-                        <x-icons path="zoomIcone.svg" />
+                <x-toogle-title />
+                <h2>Nutrição e cuidados com um gatinho em crescimento</h2>
+                <img src="img/catBlog1.png" alt="">
+                <div class="date">
+                    <div class="date_day">
+                        <div class="day_top">
+                            <h1>27</h1>
+                        </div>
+                        <div class="day_bottom">
+                            <h1>AGO</h1>
+                            <span>2024</span>
+                        </div>
+                    </div>
+                    <div class="date_hour">
+                        <span>10:00 ás 18:00</span>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
-                <img src="img/detalhesImg.png" alt="">
-                <div class="zoom">
-                    <x-icons path="zoomIcone.svg" />
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <img src="img/detalhesImg.png" alt="">
-                <div class="zoom">
-                    <x-icons path="zoomIcone.svg" />
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <img src="img/detalhesImg.png" alt="">
-                <div class="zoom">
-                    <x-icons path="zoomIcone.svg" />
-                </div>
-            </div>
+                <x-toogle-title />
+                <h2>Nutrição e cuidados com um gatinho em crescimento</h2>
+                <img src="img/catBlog1.png" alt="">
+                <div class="date">
+                    <div class="date_day">
+                        <div class="day_top">
+                            <h1>27</h1>
+                        </div>
+                        <div class="day_bottom">
+                            <h1>AGO</h1>
+                            <span>2024</span>
+                        </div>
 
+                    </div>
+                    <div class="date_hour">
+                        <span>10:00 ás 18:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <x-toogle-title />
+                <h2>Nutrição e cuidados com um gatinho em crescimento</h2>
+                <img src="img/catBlog1.png" alt="">
+                <div class="date">
+                    <div class="date_day">
+                        <div class="day_top">
+                            <h1>27</h1>
+                        </div>
+                        <div class="day_bottom">
+                            <h1>AGO</h1>
+                            <span>2024</span>
+                        </div>
+
+                    </div>
+                    <div class="date_hour">
+                        <span>10:00 ás 18:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <x-toogle-title />
+                <h2>Nutrição e cuidados com um gatinho em crescimento</h2>
+                <img src="img/catBlog1.png" alt="">
+                <div class="date">
+                    <div class="date_day">
+                        <div class="day_top">
+                            <h1>27</h1>
+                        </div>
+                        <div class="day_bottom">
+                            <h1>AGO</h1>
+                            <span>2024</span>
+                        </div>
+
+                    </div>
+                    <div class="date_hour">
+                        <span>10:00 ás 18:00</span>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
 
+    </div>
+    <div class="poster">
+        <div class="poster_item">
+            <img src="img/blogImage.png" alt="">
+            <div class="poster_text">
+                <x-toogle-title />
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</h2>
+            </div>
+        </div>
+        <div class="poster_item">
+            <img src="img/blogImage.png" alt="">
+            <div class="poster_text">
+                <x-toogle-title />
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</h2>
+            </div>
+        </div>
+        <div class="poster_item">
+            <img src="img/blogImage.png" alt="">
+            <div class="poster_text">
+                <x-toogle-title />
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</h2>
+            </div>
+        </div>
     </div>
 </div>

@@ -18,6 +18,8 @@
 @import 'listagemGatos.scss';
 @import 'heroDetalhes';
 @import 'heroBlog';
+@import 'sliderBlog';
+@import 'blogContent';
 
 .btn_app {
     position: relative;
@@ -131,5 +133,43 @@
         position: absolute;
         right: 150%;
         top: 10px;
+    }
+}
+
+.toogle_title {
+    background-color: #EAEAEA;
+    display: flex;
+    width: 250px;
+    height: 30px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+
+    p {
+        margin-top: 3px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .toogle_left {
+        background-color: #53248F;
+        border-radius: 25px;
+        width: 50%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        margin-left: 5px;
+
+        p {
+            color: #FFF;
+        }
+    }
+
+    .toogle_right {
+        border-radius: 25px;
+        width: 50%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
     }
 }
