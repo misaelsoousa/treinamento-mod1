@@ -6,6 +6,7 @@
 
     .img_banner {
 
+
         .publicidade1,
         .publicidade2 {
             position: absolute;
@@ -80,6 +81,13 @@
         }
     }
 
+    .img_content {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
 
     .icons_social {
         display: flex;
@@ -377,6 +385,10 @@
         width: 100%;
         overflow: hidden;
 
+        .img_banner {
+            display: none;
+        }
+
         .content {
             width: 100%;
             display: block;
@@ -447,5 +459,6 @@
                 }
             }
         }
+
     }
 }

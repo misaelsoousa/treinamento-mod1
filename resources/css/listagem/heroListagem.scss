@@ -188,7 +188,7 @@
 body.dark-mode {
     .hero_listagem {
         padding-bottom: 0;
-        margin-top: 4em;
+        margin-top: 0 !important;
 
         .listagem {
             background-color: #2D0D55;
@@ -215,6 +215,11 @@ body.dark-mode {
 @media (max-width: 767px) {
     .hero_listagem {
         width: 100%;
+        margin-top: 4em;
+
+        .hero_image {
+            margin-top: 4em;
+        }
 
         .listagem {
             width: 100%;

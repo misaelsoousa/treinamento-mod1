@@ -6,15 +6,15 @@
             </div>
             <img class="publicidade1" src="img/publicidade2.png" alt="">
         </div>
-        <div class="img_content">
-            <img src="img/blogPostCat.png" alt="">
-        </div>
         <div class="publicidade_content2">
             <div class="close_publicidade close2">
                 <x-icons path="x.svg" />
             </div>
             <img class="publicidade2" src="img/publicidade2.png" alt="">
         </div>
+    </div>
+    <div class="img_content">
+        <img src="img/blogPostCat.png" alt="">
     </div>
     <div class="icons_social">
         <a href="#">
