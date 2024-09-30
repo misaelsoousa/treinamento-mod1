@@ -1,0 +1,182 @@
+.depoimentos {
+    display: flex;
+    padding-bottom: 20em;
+
+    .review_page {
+        position: relative;
+        margin-top: 10%;
+        display: flex;
+        padding-left: 5em;
+
+        .review_details {
+            position: absolute;
+            right: 15%;
+            top: -40%;
+        }
+
+        .review_title {
+            padding-left: 30%;
+            padding-top: 3em;
+            width: 100%;
+
+            h3 {
+                font-weight: 300;
+                color: #1A1442;
+                font-size: 35px;
+            }
+
+            p {
+                width: 60%;
+            }
+        }
+    }
+
+
+    .swiper_depoimentos {
+        width: 60%;
+        position: relative;
+        padding-top: 10em;
+        margin-right: 0;
+        padding-left: 5em;
+
+        .swiper-slide {
+            position: relative;
+            padding: 50px 0;
+            opacity: 0.5;
+
+            .card {
+                width: 300px;
+                border-radius: 10px;
+
+                .card_content {
+                    text-align: center;
+                    padding: 20px;
+                    font-family: 'Roboto';
+                    position: relative;
+                    box-shadow: 0px 0px 40px 5px rgba(#EAD9FF, 0.3);
+
+                    h2 {
+                        padding-top: 2em;
+                    }
+
+                    h3,
+                    p {
+                        color: #1A1442;
+                    }
+
+                    .review_circle {
+                        position: absolute;
+                        border-radius: 50%;
+                        height: 120px;
+                        width: 120px;
+                        background: linear-gradient(to bottom, rgba(83, 36, 143, 0.3), rgba(153, 85, 83, 0));
+                        left: 30%;
+                        top: -60px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            height: 80px;
+                            width: 80px;
+                        }
+                    }
+
+                    .card_title {
+                        font-family: 'Roboto';
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+
+                    .card_subtitle {
+                        font-family: 'Roboto';
+                        font-size: 15px;
+                        font-weight: 100;
+                        padding-bottom: 1em;
+                    }
+
+                    p {
+                        padding-bottom: 1em;
+                    }
+                }
+            }
+        }
+
+        .swiper-slide-active {
+            opacity: 1;
+        }
+
+        .swiper-slide-next {
+            opacity: 1;
+        }
+
+        .swiper-button-next {
+            right: calc(30% - 20px);
+            top: 60%;
+
+            &::after {
+                content: '';
+                background-image: url('../assets/icons/arrowDepoimentos.svg');
+                background-position: center;
+                height: 30px;
+                width: 30px;
+            }
+        }
+
+        .swiper-button-prev {
+            left: 0;
+            top: 60%;
+
+            &::after {
+                content: '';
+                background-image: url('../assets/icons/prevDepoimentos.svg');
+                background-position: center;
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .depoimentos {
+        display: block;
+        padding-bottom: 0;
+        margin-bottom: 2em;
+
+        .review_page {
+            padding-left: 0;
+
+            .review_title {
+                padding-left: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                p {
+
+                    width: 80%;
+                }
+            }
+
+            .review_details {
+                display: none;
+            }
+        }
+
+        .swiper_depoimentos {
+            width: 100%;
+            padding-left: 2.5em;
+            padding-top: 2em;
+
+            .swiper-button-next {
+                right: 0;
+            }
+        }
+
+
+    }
+}

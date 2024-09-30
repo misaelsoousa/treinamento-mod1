@@ -155,8 +155,6 @@
         </div>
         <div class="bottom_cats">
             <div class="list_cats">
-
-
                 <div class="item_list" data-cidade="Santos">
                     <div class="img_list">
                         <img src="img/milkCat.png" />

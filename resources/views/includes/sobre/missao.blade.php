@@ -18,10 +18,10 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.</p>
         </div>
-
     </div>
     <div class="mid_content">
         <div class="mid_top">
+            <h2 class="mobile_text">Missão</h2>
             <div class="icon_circle">
                 <div class="icon_white">
                     <div class="icon_area">
@@ -47,6 +47,7 @@
             <h2>Valores</h2>
         </div>
         <div class="right_bottom">
+            <h2 class="mobile_text">Valores</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.</p>
             <div class="icon_circle">

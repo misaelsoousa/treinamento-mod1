@@ -1,25 +1,44 @@
-@import 'header.scss';
-@import 'hero.scss';
-@import 'reset.scss';
-@import 'details.scss';
-@import 'modal.scss';
-@import 'cookies.scss';
-@import 'adocao.scss';
-@import 'history.scss';
-@import 'faq.scss';
-@import 'depoimentos.scss';
-@import 'clientes.scss';
-@import 'footerHome.scss';
-@import 'heroSobre.scss';
-@import 'estrutura.scss';
-@import 'missao.scss';
-@import 'footerGeral.scss';
-@import 'heroListagem.scss';
-@import 'listagemGatos.scss';
-@import 'heroDetalhes';
-@import 'heroBlog';
-@import 'sliderBlog';
-@import 'blogContent';
+@import 'reset';
+@import 'header';
+@import 'modal';
+@import 'cookies';
+@import 'footerGeral';
+// home
+@import 'home/hero';
+@import 'home/timeLineHome';
+@import 'home/depoimentos';
+@import 'home/clientes';
+@import 'home/footerHome';
+@import 'home/adocao';
+@import 'home/faq';
+@import 'home/details';
+//blog
+@import 'blog/blogContent';
+@import 'blog/heroBlog';
+@import 'blog/sliderBlog';
+//sobre
+@import 'sobre/heroSobre';
+@import 'sobre/estrutura';
+@import 'sobre/missao';
+//listagem
+@import 'listagem/heroListagem';
+@import 'listagem/listagemGatos';
+//detalhes
+@import 'detalhes/heroDetalhes';
+//blogpost
+@import 'blog-post/heroPost';
+@import 'blog-post/postContent';
+//contato
+@import 'contato/heroContato';
+@import 'contato/formulario';
+
+
+@font-face {
+    font-family: 'SFRepublic';
+    src: url('/resources/assets/fonts/newRepublic.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .btn_app {
     position: relative;
@@ -89,15 +108,10 @@
     font-family: "Roboto";
 }
 
-@font-face {
-    font-family: 'SFRepublic';
-    src: url('../assets/fonts/newRepublic.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 .history_sobre {
-    margin-top: 30em;
+    margin-top: 0;
 
 }
 

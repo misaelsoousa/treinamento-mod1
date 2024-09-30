@@ -46,7 +46,6 @@
 
         .close.transformed x-icons {
             transform: rotate(45deg);
-            /* Rotação de 45 graus ou outra transformação de sua escolha */
             transition: transform 0.3s ease-in-out;
         }
 
@@ -98,7 +97,7 @@
     }
 }
 
-.minimized_icon {
+.icon_minimized {
     position: fixed;
     top: 50%;
     right: 20px;
@@ -108,6 +107,28 @@
     background-color: #271B35;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
+    display: none;
     box-shadow: #271B35;
+    justify-content: center;
+    box-shadow: 0 0 10px 5px rgba($color: #1F162B, $alpha: .5);
+
+    svg {
+        width: 35px;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .modal_adote {
+        display: none;
+    }
+}
+
+@media (max-width: 414px) {
+    /* Estilos para telefones médios e grandes */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos para tablets */
 }

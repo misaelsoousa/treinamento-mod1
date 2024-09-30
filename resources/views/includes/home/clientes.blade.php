@@ -1,5 +1,4 @@
 <div class="clientes">
-
     <div class="swiper swiper_clientes">
         <div class="title_clientes">
             <h2>Nossos Clientes</h2>
@@ -9,7 +8,7 @@
             <div class="swiper-slide">
                 <div class="lines_clientes">
                     <div class="first_line">
-                        <img src="img/jardimNorte.png" />
+                        <img class="first_img" src="img/jardimNorte.png" />
                         <div class="right_line">
                             <img src="img/enem.png" />
                             <img src="img/papiro.png" />
@@ -32,9 +31,7 @@
             <div class="swiper-slide">
                 <div class="lines_clientes">
                     <div class="first_line">
-                        <div>
-                            <img src="img/jardimNorte.png" />
-                        </div>
+                        <img class="first_img" src="img/jardimNorte.png" />
                         <div class="right_line">
 
                             <img src="img/enem.png" />
@@ -59,9 +56,7 @@
             <div class="swiper-slide">
                 <div class="lines_clientes">
                     <div class="first_line">
-                        <div>
-                            <img src="img/jardimNorte.png" />
-                        </div>
+                        <img class="first_img" src="img/jardimNorte.png" />
                         <div class="right_line">
                             <img src="img/objetivo.png" />
                             <img src="img/saoBartolomeu.png" />
@@ -81,7 +76,6 @@
                 </div>
             </div>
         </div>
-
+        <div class="swiper-pagination"></div>
     </div>
-    <div class="swiper-pagination"></div>
 </div>

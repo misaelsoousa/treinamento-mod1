@@ -1,10 +1,12 @@
 <div class="footer">
     <div class="footer_content container">
         <div class="footer_form">
-            <h2>
-                Vamos iniciar
-            </h2>
-            <span>sua adoção?</span>
+            <div class="title_form">
+                <h2>
+                    Vamos iniciar
+                </h2>
+                <span>sua adoção?</span>
+            </div>
             <form>
                 <input type="text" placeholder="Nome:">
                 <input type="text" placeholder="E-mail:">
@@ -62,15 +64,16 @@
             </div>
         </div>
         <div class="footer_tips">
-
-            <h2>
-                RECEBA </br>
-                NOSSAS DICAS
-            </h2>
-            <p>
-                Receba em primeira mão </br>
-                as dicas e novidades da ong.
-            </p>
+            <div class="footer_mobile">
+                <h2>
+                    RECEBA </br>
+                    NOSSAS DICAS
+                </h2>
+                <p>
+                    Receba em primeira mão </br>
+                    as dicas e novidades da ong.
+                </p>
+            </div>
             <div class="footer_input">
                 <input type="text" placeholder="DIGITE AQUI SEU E-MAIL:" />
                 <x-button>

@@ -14,8 +14,9 @@
             <x-icons path="adocao.svg" />
         </div>
         <div class="detail_banner">
-            <img src="img/detailBanner.png" alt="">
+            <x-icons path="detailBanner.svg" />
         </div>
+
         <div class="listagem_content container ">
             <div class="text_content">
                 <h2>Escolha por raça</h2>
@@ -99,11 +100,14 @@
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-
             </div>
         </div>
         <div class="bottom_listagem">
             <img src="img/bottomListagem.png" alt="">
         </div>
 
+        <div class="bottom_listagem2">
+            <img src="img/bottomListagem2.png" alt="">
+        </div>
     </div>
+</div>

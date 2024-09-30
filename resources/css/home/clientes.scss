@@ -1,0 +1,95 @@
+.clientes {
+    padding-bottom: 20em;
+    position: relative;
+
+    .swiper_clientes {
+        width: 100%;
+        max-width: 1920px;
+        width: 100%;
+        position: relative;
+        padding-bottom: 5em;
+
+        .title_clientes {
+            position: absolute;
+            z-index: 2;
+            left: 20%;
+
+            h2 {
+                font-family: 'SFRepublic', sans-serif;
+            }
+
+            p {
+                font-family: "Roboto", sans-serif;
+            }
+        }
+
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+
+            .lines_clientes {
+
+                img {
+                    width: 14.3%;
+                    height: 100%;
+                    object-fit: cover;
+                    border: 1px solid #c0c0c0;
+                }
+
+                .first_line {
+                    display: flex;
+                    justify-content: space-between;
+
+                    img {
+                        width: 33.5%;
+                    }
+
+                    .first_img {
+                        width: 14.3%;
+                        height: 100%;
+                    }
+
+                    .right_line {
+                        width: 42.9%;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+
+                .second_line {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+
+                .third_line {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        bottom: 100px;
+
+        .swiper-pagination-bullet {
+            background: transparent;
+            border: 1px solid #53248F;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #53248F;
+        }
+    }
+}
+
+@media (max-width: 747px) {
+    .clientes {
+        .title_clientes {
+            display: none;
+        }
+    }
+}

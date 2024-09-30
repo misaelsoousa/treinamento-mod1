@@ -1,10 +1,7 @@
 <div class="adocao">
-
     <img class="list_detail" src="img/listDetail.png" />
-
     <div class="adocao_content container">
         <nav class="navbar_adocao container">
-
             <ul>
                 <li><button class="btn_navbar" data-cidade="Santos">Santos</button></li>
                 <li><button class="btn_navbar" data-cidade="São Vicente">São Vicente</button></li>
@@ -12,12 +9,8 @@
                 <li><button class="btn_navbar" data-cidade="Guarujá">Guarujá</button></li>
                 <li><button class="btn_navbar" data-cidade="Cubatão">Cubatão</button></li>
             </ul>
-
-
         </nav>
-
         <div>
-
             <div class="list_cats">
                 <div class="item_list" data-cidade="Santos">
                     <div class="img_list">
@@ -44,6 +37,7 @@
                         </div>
                     </div>
                 </div>
+
 
                 <div class="item_list" data-cidade="São Vicente">
                     <div class="img_list">
@@ -122,6 +116,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="list_content">
 

@@ -23,7 +23,20 @@
                     </x-button>
                 </div>
             </div>
-
+            <div class="link_sobre">
+                <a href="#">
+                    <p>O começo</p>
+                </a> </br>
+                <a href="#history">
+                    <p>Nossa história</p>
+                </a> </br>
+                <a href="#estrutura">
+                    <p>Nossa estrutura</p>
+                </a> </br>
+                <a href="#">
+                    <p>Missão, Visão e Valores</p>
+                </a>
+            </div>
             <div class="video_container">
                 <div class="thumb" id="thumb">
                     <img src="img/thumb.png" alt="Gatos">
@@ -45,37 +58,33 @@
 
 
             <div class="circles_hero">
-                <div class="circle circle1">
-                    <h2>10</h2>
-                    <p>Anos</p>
+                <div class="group_circle">
+                    <div class="circle circle1">
+                        <h2>10</h2>
+                        <p>Anos</p>
+                    </div>
+                    <div class="circle circle2">
+                        <h2>1.7k</h2>
+                        <p>Resgates</p>
+                    </div>
                 </div>
-                <div class="circle circle2">
-                    <h2>1.7k</h2>
-                    <p>Resgates</p>
+                <div class="group_circle">
+                    <div class="circle circle3">
+                        <h2>1.5k</h2>
+                        <p>Adoções</p>
+                    </div>
+                    <div class="circle circle4">
+                        <h2>40</h2>
+                        <p>Voluntários</p>
+                    </div>
                 </div>
-                <div class="circle circle3">
-                    <h2>1.5k</h2>
-                    <p>Adoções</p>
+                <div class="last_circle">
+                    <div class="circle circle5">
+                        <h2>22</h2>
+                        <p>Cidades</p>
+                    </div>
                 </div>
-                <div class="circle circle4">
-                    <h2>40</h2>
-                    <p>Voluntários</p>
-                </div>
-                <div class="circle circle5">
-                    <h2>22</h2>
-                    <p>Cidades</p>
-                </div>
+
             </div>
-
         </div>
-        <script>function playVideo() {
-                // Exibe o iframe e oculta a imagem da miniatura
-                document.querySelector('.video-thumbnail').style.display = 'none';
-                var iframe = document.getElementById('youtube-video');
-                iframe.style.display = 'block';
-
-                // Usar a API do YouTube para iniciar o vídeo
-                var videoSrc = iframe.src;
-                iframe.src = videoSrc + "&autoplay=1"; // Adiciona autoplay à URL do vídeo
-            }</script>
     </div>

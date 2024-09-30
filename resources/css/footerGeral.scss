@@ -2,17 +2,20 @@
     margin-top: 30em;
     position: relative;
     background-color: #461A7E;
+    width: 100%;
+
 
     .top_footer {
         position: absolute;
         height: auto;
+        width: 100%;
+        overflow: hidden;
+        bottom: 99%;
 
         svg {
             width: 99.35vw;
-            height: auto;
+            height: 100%;
         }
-
-        bottom: 99%;
 
     }
 
@@ -22,18 +25,119 @@
         display: flex;
         flex-direction: column;
 
+        .footer_form {
+            background-color: #191545;
+            padding: 7em;
+            border-radius: 32px;
+            position: relative;
+
+            h2,
+            span {
+                font-size: 40px;
+                font-family: 'SFRepublic', 'Arial', sans-serif;
+                color: #FFF;
+                padding: 0;
+                margin: 0;
+            }
+
+            span {
+                font-size: 80px;
+                font-family: 'SFRepublic', 'Arial', sans-serif;
+            }
+
+            form {
+                padding-top: 3em;
+
+                input,
+                textarea,
+                select {
+                    width: 50%;
+                    background: transparent;
+                    padding: 1.1em;
+                    border: 1px solid rgba($color: #FFF, $alpha: .5);
+                    margin-bottom: 1em;
+                    color: #FFF;
+                    resize: none;
+
+                    &::placeholder {
+                        color: #FFF;
+                    }
+
+                    &:focus {
+                        outline: 1px solid white;
+                    }
+                }
+
+                select {
+                    width: 25%;
+
+                    option {
+                        background-color: #0E0C27;
+
+                    }
+                }
+
+                .inputs1 {
+                    display: flex;
+
+                    input {
+                        width: calc(25% - 0.2em);
+
+                        &:first-child {
+                            margin-right: .4em;
+                        }
+                    }
+
+                    select {
+                        width: calc(25% - 0.2em);
+
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+
+            }
+
+            button {
+                font-size: 15px;
+                padding: 1.2em 10em;
+                border-radius: 0 40px 0 40px;
+                margin-top: 2em;
+                margin-bottom: 7em;
+
+                svg {
+                    display: none;
+
+                }
+            }
+
+            .catFooter {
+                position: absolute;
+                bottom: -12%;
+                right: -10%;
+                z-index: 2;
+            }
+
+            .ellipseFooter {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 1;
+            }
+        }
+
         .footer_card {
             display: flex;
             color: #FFF;
             text-align: center;
-            justify-content: center;
             position: relative;
             justify-content: space-evenly;
 
             .card_content {
                 width: 440px;
                 height: 440;
-                margin: 3em;
+                margin-block: 3em;
                 padding: 4em;
                 display: flex;
                 flex-direction: column;
@@ -44,18 +148,15 @@
                     padding-top: 1em;
                 }
 
-                &:first-child {
-                    margin-right: 20em;
-                }
+
             }
 
             .whats {
                 background-color: #FF87F3;
                 color: #461A7E;
                 border-radius: 12px;
-                position: absolute;
-                top: -25%;
-
+                position: relative;
+                margin-top: -5em;
 
                 h2 {
                     font-size: 25px;
@@ -92,7 +193,17 @@
             color: #FFF;
             height: 300px;
             align-items: center;
+            position: relative;
+            overflow: hidden;
 
+            img {
+                position: absolute;
+                top: 0;
+            }
+
+            .footer_mobile {
+                display: flex;
+            }
 
             h2,
             p,
@@ -108,6 +219,18 @@
 
             .footer_input {
                 display: flex;
+                position: relative;
+                width: 40%;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 80%;
+                    height: 3px;
+                    background-color: #FF87F3;
+                    bottom: 0;
+                    transition: .3s ease;
+                }
 
                 input {
                     background: transparent;
@@ -115,7 +238,6 @@
                     font-size: 15px;
                     position: relative;
                     color: #FFF;
-                    width: 500px;
 
                     &::placeholder {
                         color: #FFF;
@@ -125,6 +247,7 @@
                     &:focus {
                         outline: none;
                     }
+
                 }
 
                 button {
@@ -136,25 +259,12 @@
                     color: #191545;
                     border: none;
                     transition: .3s ease;
-
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        width: 500px;
-                        height: 3px;
-                        background-color: #FF87F3;
-                        bottom: 0;
-                        right: 100%;
-                        transition: .3s ease;
-                    }
+                    margin-left: 50%;
+                    white-space: nowrap;
 
                     &:hover {
                         background-color: #461A7E;
                         color: #FFF;
-
-                        &::before {
-                            background-color: #461A7E;
-                        }
                     }
 
                     svg {
@@ -168,6 +278,7 @@
             display: flex;
             padding-left: 14em;
             position: relative;
+            overflow: hidden;
 
             h2 {
                 font-size: 20px;
@@ -184,8 +295,6 @@
                     &:first-child {
                         width: 400px;
                         margin-right: 15em;
-
-                        h2 {}
                     }
 
                     &:last-child {
@@ -229,7 +338,7 @@
 
                         &::before {
                             content: '';
-                            width: 450px;
+                            width: 100%;
                             height: 1px;
                             background-color: rgba($color: #FFF, $alpha: .2);
                             position: absolute;
@@ -248,6 +357,204 @@
                 position: absolute;
                 bottom: 0;
                 left: -2%;
+            }
+        }
+    }
+}
+
+body.dark-mode {
+    .footerGeral {
+        background-color: #2D0D55;
+
+        .footer_content {
+            .footer_card {
+
+                .whats {
+                    background-color: #995292;
+                }
+            }
+        }
+
+        .top_footer {
+            svg {
+
+                rect,
+                ellipse,
+                path {
+                    fill: #2D0D55;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .ellipseFooter {
+        display: none;
+    }
+
+    .catFooter {
+        display: none;
+    }
+
+    .footerGeral {
+        background: none;
+        background-color: #461A7E;
+        margin-top: 5em;
+
+        .top_footer {
+            display: none;
+        }
+
+        .footer_content {
+
+            .footer_card {
+                display: block;
+
+                .card_content {
+                    border-radius: 0;
+                    width: 100%;
+                    padding: 1em;
+                    margin-top: 1em;
+                }
+            }
+
+            .footer_tips {
+                padding: 1em;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                height: inherit;
+                border-radius: 0;
+
+                h2 {
+                    padding-left: 0;
+                }
+
+                p {
+                    padding-left: 0;
+                }
+
+                .footer_input {
+                    padding-left: 0;
+                    margin-left: 1em;
+                    display: block;
+
+
+                    &::before {
+                        display: none;
+                    }
+
+                    input {
+                        width: calc(375px - 3em);
+                        border: 1px solid #FFF;
+                        padding: 1em;
+                    }
+
+                    button {
+                        margin-top: 2em;
+                        margin-bottom: 2em;
+                        width: calc(375px - 2em);
+                        margin-left: 0;
+                    }
+                }
+
+                .footer_mobile {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    padding: 1em;
+                    margin-left: 2em;
+                }
+            }
+
+            .footer_form {
+                border-radius: 0;
+                padding: 2em;
+
+                .title_form {
+
+                    h2,
+                    span {
+                        font-size: 20px;
+                    }
+
+                }
+
+                form {
+
+                    input,
+                    textarea,
+                    select {
+                        width: 100%;
+                        font-size: 12px;
+                    }
+
+                    .inputs1 {
+                        input {
+                            width: 50%;
+                            font-size: 12px;
+                        }
+
+                        select {
+                            width: 50%;
+                            font-size: 12px;
+                        }
+                    }
+
+                }
+
+                button {
+                    font-size: 20px;
+                    width: 100%;
+                    padding: 1em 0;
+                }
+            }
+
+            .foot {
+                padding-left: 0;
+                display: block;
+                padding: 1em;
+                font-size: 20px;
+
+                .foot_left {
+                    padding: 1em;
+                    display: block;
+
+                    div {
+                        padding-top: 0;
+                        width: 100% !important;
+                    }
+
+
+                }
+
+                .foot_right {
+                    div {
+                        border: none !important;
+                        padding: 1em;
+                        margin-bottom: 1em;
+
+                        &::before {
+                            display: none;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 10em;
+                        }
+                    }
+
+                }
+
+                .catLogoFooter {
+                    svg {
+                        width: 100%;
+                        height: auto;
+                        padding: 1em;
+                    }
+                }
             }
         }
     }

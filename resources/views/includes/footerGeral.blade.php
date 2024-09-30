@@ -31,15 +31,17 @@
             </div>
         </div>
         <div class="footer_tips">
-
-            <h2>
-                RECEBA </br>
-                NOSSAS DICAS
-            </h2>
-            <p>
-                Receba em primeira mão </br>
-                as dicas e novidades da ong.
-            </p>
+            <img src="img/footerDetalhe.png" alt="">
+            <div class="footer_mobile">
+                <h2>
+                    RECEBA </br>
+                    NOSSAS DICAS
+                </h2>
+                <p>
+                    Receba em primeira mão </br>
+                    as dicas e novidades da ong.
+                </p>
+            </div>
             <div class="footer_input">
                 <input type="text" placeholder="DIGITE AQUI SEU E-MAIL:" />
                 <x-button>

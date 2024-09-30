@@ -1,6 +1,8 @@
 <div class="details">
     <div class="detail_banner">
+
         <x-icons path="detailBanner.svg" />
+
     </div>
     <div class="details_content container">
 
@@ -48,21 +50,22 @@
             </div>
             <div class="info_apoie">
                 <div class="cards_info">
-
-
-
-                    <div class="info_card">
-                        <x-icons path="infoCat.svg" />
-                        <p><span>+1.2</span> mil gatinhos</br> adotados em 2024</p>
+                    <div class="card_mobile">
+                        <div class="info_card">
+                            <x-icons path="infoCat.svg" />
+                            <p><span>+1.2</span> mil gatinhos</br> adotados em 2024</p>
+                        </div>
+                        <div class="info_card">
+                            <x-icons path="infoMao.svg" />
+                            <p><span>+305</span> protetores</br> apoiados durante</br> o ano</p>
+                        </div>
                     </div>
-                    <div class="info_card">
-                        <x-icons path="infoMao.svg" />
-                        <p><span>+305</span> protetores</br> apoiados durante</br> o ano</p>
-                    </div>
-                    <div class="info_card">
-                        <x-icons path="infoTesoura.svg" />
-                        <p><span>+2.1</span> castrações</br>
-                            de gatos realizadas</p>
+                    <div class="last_card_mobile">
+                        <div class="info_card">
+                            <x-icons path="infoTesoura.svg" />
+                            <p><span>+2.1</span> castrações</br>
+                                de gatos realizadas</p>
+                        </div>
                     </div>
                 </div>
             </div>

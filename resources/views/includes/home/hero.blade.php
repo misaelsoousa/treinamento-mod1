@@ -1,12 +1,10 @@
 <div class="content_hero ">
-
     <div class="swiper swiper_hero">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="hero_image">
                     <img src="img/heroImage.png" />
                 </div>
-
                 <h1>
                     Doe amor, <br />
                     <span>

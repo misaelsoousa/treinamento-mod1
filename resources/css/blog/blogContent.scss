@@ -1,0 +1,425 @@
+.blog_content {
+    margin-top: 5em;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+
+    .blog_container {
+        display: flex;
+    }
+
+    .email {
+        width: 850px;
+        border: 1px solid rgba($color: #000, $alpha: .2);
+        display: flex;
+        padding: 2em;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(255, 119, 74, 0.2);
+
+        form {
+            margin-top: 2em;
+            margin-left: 2em;
+            display: flex;
+            border: 1px solid #461A7E;
+            padding: .5em;
+            border-radius: 50px;
+
+
+            input,
+            button {
+                border: none;
+                background: none;
+                padding-left: 1em;
+
+                &::placeholder {
+                    color: #000;
+                    font-weight: bold;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            button {
+                background-color: #461A7E;
+                color: #FFF;
+                padding: .5em 2em;
+                border-radius: 50px;
+                padding-left: 2em;
+            }
+        }
+    }
+
+    .card_content {
+        display: flex;
+        width: 100%;
+        margin-top: 2em;
+        margin-right: -7em;
+
+        .card_blog {
+            width: 100%;
+
+            img {
+                object-fit: cover;
+                margin-bottom: 2em;
+                width: 100%;
+            }
+
+            .text_blog {
+
+
+                h2 {
+                    margin-top: .5em;
+                }
+
+                p {
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    .right_content {
+        display: flex;
+        margin-left: 1em;
+
+        .left_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            img {
+                &:first-child {
+                    margin-bottom: 2em;
+                }
+            }
+
+            h2 {
+                margin-top: .5em;
+                font-size: 25px;
+                width: 80%;
+            }
+
+            .blog_tags_mobile {
+                display: none;
+            }
+
+        }
+
+        .publicidade {
+            p {
+                margin: 0;
+                color: rgba($color: #202020, $alpha: .5);
+            }
+        }
+
+
+
+        .blog_tags {
+            margin-left: 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .tags_cat {
+
+                .tags_content {
+                    display: flex;
+                    background-color: #FFF;
+                    flex-wrap: wrap;
+
+
+                    .tags {
+                        display: flex;
+
+                        p {
+                            background-color: #E4E0EB;
+                            padding: .3em 2em;
+                            border-radius: 12px;
+                            white-space: nowrap;
+                            margin-right: .5em;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+
+    .blog_foot {
+        margin-top: 10em;
+        display: flex;
+        justify-content: space-between;
+
+        .item_foot {
+            display: flex;
+            margin-top: 5em;
+
+            .left_item_foot {
+                margin-top: 3em;
+                display: flex;
+
+                .date_day {
+                    border: 3px solid #461A7E;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 120px;
+                    height: 150px;
+                    margin-left: 2em;
+
+                    .day_top {
+                        background-color: #461A7E;
+                        padding: 0;
+                        width: 100%;
+                        height: 50%;
+                        padding: 0 2em;
+                        padding-bottom: 1em;
+                        color: #FFF;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .day_bottom {
+                        height: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                .text_foot {
+                    margin-left: 2em;
+
+                    h2 {
+                        margin-top: 1em;
+                        width: 600px;
+                    }
+                }
+            }
+        }
+
+        .date_information {
+            width: 450px;
+            border-radius: 15px;
+            border: 1px solid rgba($color: #E6E6E6, $alpha: 1.0);
+            text-align: center;
+            padding: 2em;
+            box-shadow: 0 0 15px rgba(255, 119, 74, 0.2);
+
+            h2 {
+                position: relative;
+                margin-bottom: 2em;
+                font-weight: bold;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    background-color: rgba($color: #461A7E, $alpha: .2);
+                    left: 0;
+                    bottom: -20px;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 20%;
+                    height: 2px;
+                    background-color: rgba($color: #461A7E, $alpha: 1);
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: -20px;
+                }
+            }
+
+            .item_information {
+                padding-block: 2em;
+                position: relative;
+
+                h3 {
+                    text-align: start;
+                    margin-top: 1em;
+                    font-size: 27px;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    background-color: rgba($color: #461A7E, $alpha: .2);
+                    left: 0;
+                    bottom: 0;
+                }
+
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 767px) {
+
+    .blog_content {
+        width: 100vw;
+
+        .blog_container {
+            display: block;
+            width: 100%;
+            padding: 1em;
+
+            .email {
+                display: block;
+                width: 100%;
+                padding: 1em;
+
+                .email_text {
+                    padding: 1em;
+                }
+
+                .input_email {
+                    width: 100% !important;
+                    margin: 0;
+                    font-size: 12px;
+
+                    form {
+                        margin: 0;
+                    }
+
+                    input {
+                        width: 100%;
+                    }
+
+                    button {
+                        padding: 1em 2em;
+                    }
+                }
+            }
+
+            .card_content {
+                display: block;
+                width: 100%;
+                margin: 0;
+                margin-top: 1em;
+
+                .card_blog {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .text_blog {
+                    h2 {
+                        width: 100% !important;
+
+                    }
+                }
+            }
+
+            .right_content {
+                display: block;
+                margin: 0;
+
+                .left_content {
+
+                    display: block;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+
+                    .card_blog {
+                        width: 100%;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .text_blog {
+                        h2 {
+                            width: 100% !important;
+
+                        }
+                    }
+
+                    .publicidade {
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .blog_tags_mobile {
+                        display: block;
+                        width: 100%;
+                        padding: 0;
+                        margin: 0;
+
+                        .tags_content {
+                            width: 100%;
+                        }
+                    }
+
+                }
+
+                .tags_last {
+                    display: none;
+                }
+            }
+        }
+
+        .blog_foot {
+            width: 100%;
+            display: block;
+            padding: 1em;
+
+            .item_foot {
+                display: block;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+
+                .left_item_foot {
+                    width: 100%;
+
+                    .date_day {
+                        width: 100%;
+                        display: none;
+                    }
+                }
+
+                .text_foot {
+                    margin: 0 !important;
+
+                    h2 {
+                        width: inherit !important;
+                    }
+                }
+            }
+
+            .date_information {
+                margin-top: 2em;
+                width: 100%;
+            }
+        }
+    }
+}

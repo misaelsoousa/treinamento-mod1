@@ -1,0 +1,181 @@
+.estrutura {
+    display: flex;
+    padding-top: 10em;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    .estrutura_content {
+        display: flex;
+        padding-top: 10em;
+        margin: 0 auto;
+        max-width: 1920px;
+
+        img {
+            width: auto;
+            height: auto;
+        }
+
+        .first_cat {
+            margin: 10em 0 0 0;
+            padding: 5em 3em;
+            position: relative;
+
+            h2 {
+                display: none;
+            }
+
+            &::before {
+                content: '';
+                width: 200%;
+                height: 1px;
+                background-color: rgba($color: #000000, $alpha: .2);
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: -1;
+            }
+        }
+
+        .mid_content {
+            position: relative;
+
+            h2 {
+                padding: 2em 0 5em 3em;
+                font-family: 'SFRepublic', sans-serif;
+                font-weight: bold;
+            }
+
+            &::before {
+                content: '';
+                width: 1px;
+                height: calc(80% + 18px);
+                background-color: rgba($color: #000000, $alpha: .2);
+                position: absolute;
+                bottom: 2.3em;
+                right: 100%;
+                z-index: -1;
+            }
+
+            .img_middle {
+                padding: 5em 3em;
+                padding-top: 0;
+                border-bottom: 1px solid rgba($color: #000000, $alpha: .2);
+                border-right: 1px solid rgba($color: #000000, $alpha: .2);
+                position: relative;
+
+                &::after {
+                    content: '';
+                    width: 250%;
+                    height: 1px;
+                    background-color: rgba($color: #000000, $alpha: .2);
+                    position: absolute;
+                    top: 0;
+                    left: 100%;
+                    z-index: -1;
+                }
+
+
+            }
+
+        }
+
+        .right_content {
+            padding-block: 5em;
+            margin-left: 3em;
+            z-index: 2;
+
+            div {
+                &:first-child {
+                    margin-bottom: 3em;
+                }
+            }
+        }
+
+    }
+
+    .pink_line {
+        position: absolute;
+        left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .estrutura {
+        padding-top: 0 !important;
+
+        .estrutura_content {
+            width: 100vw;
+            display: block;
+            padding-top: 0;
+
+            .first_cat {
+                width: 100%;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                padding: 2em;
+
+                h2 {
+                    display: block;
+                    font-family: 'SFRepublic', sans-serif;
+                    font-weight: bold;
+                }
+
+                &::before {
+                    display: none;
+                }
+
+                img {
+                    width: 100%;
+                    height: 300px;
+                }
+            }
+
+            .mid_content {
+                width: 100vw;
+                padding: 0;
+                padding: 2em;
+
+                h2 {
+                    display: none;
+                }
+
+                &::before {
+                    display: none;
+                }
+
+                .img_middle {
+                    padding: 0;
+                    border: none;
+
+                    &::after {
+                        display: none;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+
+                }
+            }
+
+            .right_content {
+                width: 100%;
+                padding: 0;
+                padding: 2em;
+                margin: 0;
+
+                img {
+                    width: 100%;
+                    height: auto;
+
+                }
+            }
+        }
+    }
+}

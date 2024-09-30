@@ -52,7 +52,7 @@
             padding-left: 2em;
 
             .link_navbar {
-                padding: 1em 1em calc(2em + 2px) 1em;
+                padding: 1.5em 1em;
                 text-decoration: none;
                 color: #fff;
                 border-radius: 10px 10px 0 0;
@@ -60,8 +60,21 @@
                 &:hover {
                     background-color: #53248F;
                 }
+
+                .active-dropdown {
+                    background-color: #53248F;
+                }
             }
 
+            .dropdown_menu,
+            .drop_menu {
+                display: none;
+            }
+
+            .dropdown_menu.active,
+            .drop_menu.active {
+                display: block;
+            }
 
 
             .switch {
@@ -70,12 +83,7 @@
                 width: 100px;
                 height: 34px;
                 cursor: pointer;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: transparent;
-                -webkit-transition: .4s;
+                background: none;
                 transition: .4s;
                 border: 1px solid #FFF;
                 border-radius: 36px;
@@ -85,24 +93,39 @@
                 .sun,
                 .moon {
                     z-index: 1;
-
-
                 }
-
 
                 .sun {
                     padding-left: 1em;
-                }
-
-                input:checked.sun {
 
                     svg {
                         path {
                             fill: white;
                         }
                     }
+                }
+
+                .moon {
+                    margin-left: 5px;
+
+
+                    svg {
+                        path {
+                            opacity: 1;
+                            fill: white;
+                        }
+                    }
+                }
+
+                .active {
+
+                    svg {
+                        opacity: 1;
+                        filter: invert(1);
+                    }
 
                 }
+
             }
 
             .drop_menu {
@@ -139,6 +162,16 @@
 
             input:checked+.slider {
                 transform: translateX(40px);
+
+            }
+
+            input:checked~.moon {
+                svg {
+                    path {
+                        fill: #000;
+                    }
+                }
+
             }
 
             .switch input {
@@ -255,4 +288,107 @@ body.dark-mode {
 
 .show {
     background-color: #53248F;
+}
+
+.navbar_mobile {
+    display: none;
+
+}
+
+@media (max-width: 767px) {
+    .navbar_content {
+        display: none;
+    }
+
+    .navbar_mobile {
+
+        display: block;
+        width: 100%;
+        position: fixed;
+        padding: 0;
+
+        .container-fluid {
+            background-color: #431e74;
+        }
+
+        .offcanvas-body {
+            width: 100%;
+
+            li {
+                list-style: none;
+                padding: 1em;
+
+                a {
+                    text-decoration: none;
+                    color: #FFF;
+                    font-family: 'SFRepublic';
+                    font-size: 20px;
+
+
+                }
+
+                button {
+                    display: none;
+                }
+            }
+
+            .switch {
+                display: flex;
+                position: relative;
+                width: 100px;
+                height: 34px;
+                cursor: pointer;
+                background-color: #000;
+                transition: .4s;
+                border: 1px solid #FFF;
+                border-radius: 36px;
+                align-items: center;
+                justify-content: space-between;
+
+                .sun,
+                .moon {
+                    z-index: 1;
+                }
+
+                .sun {
+                    padding-left: 1em;
+                }
+
+
+            }
+
+            input:checked+.slider {
+                transform: translateX(40px);
+            }
+
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            .slider {
+                position: absolute;
+                content: "";
+                height: 26px;
+                width: 50px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+                border-radius: 36px;
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: 414px) {
+    /* Estilos para telefones médios e grandes */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos para tablets */
 }

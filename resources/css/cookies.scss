@@ -10,10 +10,12 @@
     bottom: 5%;
     left: 5%;
     justify-content: space-between;
+    max-height: 150px;
 
     a {
         color: #FF87F3;
     }
+
 
     .buttons_cookie {
         display: flex;
@@ -42,3 +44,17 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+
+    /* Estilos para telefones pequenos */
+    .cookie_content {
+        display: none;
+    }
+}
+
+@media (max-width: 414px) {
+    /* Estilos para telefones médios e grandes */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {}

@@ -24,7 +24,7 @@
                 <div class="swiper-slide">
                     <div class="doble_slide">
                         <img src="img/detalhesImg.png" alt="">
-                        <img src="img/detalhesImg.png" alt="">
+                        <img class="last_img" src="img/detalhesImg.png" alt="">
                         <div class="zoom">
                             <x-icons path="zoomIcone.svg" />
                         </div>
@@ -56,35 +56,39 @@
         </div>
 
         <div class="container hero_description">
-            <div class="first_item">
-                <x-icons path="genderMale.svg" />
-                <h2>Tini</h2>
-            </div>
-            <div class="card_gender">
-                MACHO / FILHOTE
-            </div>
-            <div class="item_hero">
-                Carinhoso
-                <div class="icons">
-                    <x-icons path="heartDescricao.svg" />
-                    <x-icons path="heartDescricao.svg" />
-                    <x-icons path="heartDescricao.svg" />
+            <div class="group_description">
+                <div class="first_item">
+                    <x-icons path="genderMale.svg" />
+                    <h2>Tini</h2>
+                </div>
+                <div class="card_gender">
+                    MACHO / FILHOTE
+                </div>
+                <div class="item_hero">
+                    Carinhoso
+                    <div class="icons carinhoso">
+                        <x-icons path="heartDescricao.svg" />
+                        <x-icons path="heartDescricao.svg" />
+                        <x-icons path="heartDescricao.svg" />
+                    </div>
                 </div>
             </div>
-            <div class="item_hero">
-                Energético
-                <div class="icons energetico">
-                    <x-icons path="energyDescricao.svg" />
-                    <x-icons path="energyDescricao.svg" />
-                    <x-icons path="energyDescricao.svg" />
+            <div class="group_description">
+                <div class="item_hero">
+                    Energético
+                    <div class="icons energetico">
+                        <x-icons path="energyDescricao.svg" />
+                        <x-icons path="energyDescricao.svg" />
+                        <x-icons path="energyDescricao.svg" />
+                    </div>
                 </div>
-            </div>
-            <div class="item_hero">
-                Sociável
-                <div class="icons">
-                    <x-icons path="pawDescricao.svg" />
-                    <x-icons path="pawDescricao.svg" />
-                    <x-icons path="pawDescricao.svg" />
+                <div class="item_hero">
+                    Sociável
+                    <div class="icons">
+                        <x-icons path="pawDescricao.svg" />
+                        <x-icons path="pawDescricao.svg" />
+                        <x-icons path="pawDescricao.svg" />
+                    </div>
                 </div>
             </div>
         </div>

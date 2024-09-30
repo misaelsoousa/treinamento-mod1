@@ -1,0 +1,179 @@
+.formulario {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    .formulario_content {
+        display: block;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 5em;
+
+        h2 {
+            font-family: 'SFRepublic';
+            font-weight: bold;
+        }
+
+        form {
+            display: block;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 40%;
+            border-radius: 10px;
+            padding: 1em;
+            height: 50px;
+            margin-bottom: 1em;
+            border: 1px solid #CDCDCD;
+
+            &:focus {
+                outline: 1px solid #461A7E;
+
+                &::placeholder {
+                    font-weight: bold;
+                    color: #000;
+                }
+            }
+
+
+        }
+
+        .telefone,
+        select {
+            width: calc(20% - 1px);
+            height: 100%;
+        }
+
+        textarea {
+            height: 125px;
+            resize: none;
+        }
+
+        .foot_contato {
+            width: 100%;
+            height: 300px;
+            background-color: #461A7E;
+            display: flex;
+            align-items: center;
+            margin-top: 5em;
+            border-radius: 10px;
+
+            .adote_cat {
+                margin-left: -10em;
+
+                .cat_img {
+                    margin-left: -.5em;
+                    height: 100px;
+                    width: 750px;
+                    border-radius: 50px;
+                    background: linear-gradient(to right, #FF87F3 -50%, #53248F 100%);
+                    margin-right: .2em;
+                    position: relative;
+                    align-items: center;
+                    display: flex;
+
+                    p {
+                        font-size: 50px;
+                        color: #FFF;
+                        font-family: 'SFRepublic';
+                        margin-bottom: 0;
+                        margin-left: 1.5em;
+
+                        svg {
+                            width: 35px;
+                            height: auto;
+
+                            path {
+                                fill: #FF87F3;
+                            }
+                        }
+                    }
+
+                    img {
+                        transform: scaleX(-1);
+                        position: absolute;
+                        right: -20%;
+                        bottom: -55%;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    .cat_contato {
+        position: absolute;
+        left: 60%;
+        top: -15%;
+    }
+
+    .maps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3em;
+
+        h2 {
+            margin-bottom: 2em;
+            font-family: 'SFRepublic';
+            font-weight: bold;
+        }
+
+        iframe {
+            width: 100%;
+        }
+    }
+}
+
+body.dark-mode {
+    .formulario {
+        .formulario_content {
+            .foot_contato {
+                background-color: #2D0D55;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .formulario {
+        width: 100%;
+        padding: 1em;
+
+        .cat_contato {
+            display: none;
+        }
+
+        .formulario_content {
+            width: 100%;
+            margin-top: 2em;
+
+            input,
+            textarea {
+                width: 100%;
+            }
+
+            .telefone,
+            select {
+                width: 49%;
+
+                &::placeholder {
+                    font-size: 12px;
+                }
+            }
+
+            .foot_contato {
+                display: none;
+            }
+
+        }
+
+        .maps {
+            width: 100%;
+            height: 200px;
+        }
+    }
+}

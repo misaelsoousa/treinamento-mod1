@@ -1,0 +1,46 @@
+.blog_post {
+    width: 100%;
+    overflow: hidden;
+
+    .hero_post {
+        width: 100%;
+        background-color: #461A7E;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+
+        h1 {
+            color: #FFF;
+            font-family: 'SFRepublic', sans-serif;
+            font-size: 70px;
+            width: 40%;
+            text-align: center;
+        }
+    }
+}
+
+body.dark-mode {
+    .blog_post {
+        .hero_post {
+            background-color: #2D0D55;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .blog_post {
+        .hero_post {
+            justify-content: start;
+            width: 100%;
+            padding-block: 5em;
+            height: inherit;
+
+            h1 {
+                font-size: 30px;
+                width: 100%;
+            }
+        }
+    }
+}

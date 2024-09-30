@@ -1,0 +1,57 @@
+.blog {
+    overflow: hidden;
+    width: 100%;
+
+    .hero_blog {
+        position: relative;
+
+        .hero_image {
+            img {
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+
+        .text_hero {
+            position: absolute;
+            top: 45%;
+            display: flex;
+            left: 45%;
+            color: #FFF;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                font-size: 100px;
+                font-family: 'SFRepublic';
+                margin-right: 3em;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .blog {
+        width: 100vw;
+
+        .hero_blog {
+            margin-top: 4em;
+
+            .hero_text_component {
+                display: none;
+            }
+
+            .text_hero {
+                h2 {
+                    font-size: 30px;
+
+                }
+
+                .cat_area {
+                    display: none;
+                }
+
+            }
+        }
+    }
+}
