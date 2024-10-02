@@ -1,7 +1,6 @@
 .formulario {
     position: relative;
     width: 100%;
-    overflow: hidden;
 
     .formulario_content {
         display: block;
@@ -106,8 +105,12 @@
 
     .cat_contato {
         position: absolute;
-        left: 60%;
-        top: -15%;
+        right: 10%;
+        bottom: 40%;
+        width: 30%;
+
+
+        img {}
     }
 
     .maps {
@@ -133,6 +136,43 @@ body.dark-mode {
         .formulario_content {
             .foot_contato {
                 background-color: #2D0D55;
+            }
+        }
+    }
+}
+
+@media (max-width: 1570px) {
+    .formulario {
+
+        .formulario_content {
+
+
+            input,
+            select,
+            textarea {
+                width: 60%;
+            }
+
+            select,
+            .telefone {
+                width: calc(30% - .1em);
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1560px) {
+    .formulario {
+        .formulario_content {
+            .cat_contato {
+                display: none;
+            }
+
+            .foot_contato {
+                .adote_cat {
+                    margin-left: 0;
+                }
             }
         }
     }

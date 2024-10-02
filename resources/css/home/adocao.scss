@@ -24,7 +24,7 @@
         justify-content: center;
         padding: 0;
         margin: 0;
-        width: 100vw;
+        width: 100%;
 
         ul {
             list-style: none;
@@ -38,6 +38,7 @@
                 white-space: nowrap;
 
                 button {
+
                     padding: 2em;
                     padding-inline: 7em;
                     background: none;
@@ -241,10 +242,40 @@ body.dark-mode {
     }
 }
 
+
 @media (max-width: 1580px) {
-    .list_cats {
-        .item_list:last-child {
-            display: none;
+    .adocao {
+        .navbar_adocao {
+            ul li button {
+                padding: 2em;
+            }
+        }
+
+
+        .adocao_content {
+
+            .list_cats {
+
+                .item_list:nth-child(4) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .adocao {
+        .adocao_content {
+
+            .list_cats {
+                padding-left: 3em;
+                padding-top: 3em;
+
+                .item_list:nth-child(3) {
+                    display: none;
+                }
+            }
         }
     }
 }

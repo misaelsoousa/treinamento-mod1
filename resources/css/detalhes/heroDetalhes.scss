@@ -354,6 +354,18 @@ body.dark-mode {
     }
 }
 
+@media (max-width: 1040px) {
+    .detalhes {
+        .recomendacao {
+            .recomendacao_content {
+                .card_cat:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 767px) {
     .detalhes {
         .hero_detalhes {

@@ -162,6 +162,44 @@
     }
 }
 
+@media (max-width: 1890px) {
+    .blog_slider {
+        .swiper_blog {
+            margin-left: 0;
+
+            .swiper-slide {
+                width: 100%;
+
+                h2 {
+                    width: 80%;
+                }
+
+                img {
+                    width: 85%;
+                }
+            }
+
+            .swiper-button-next {
+                top: inherit;
+                bottom: 20%;
+                height: 50px;
+                width: 50px;
+                border-radius: 0;
+                right: 20%;
+            }
+
+            .swiper-button-prev {
+                top: inherit;
+                bottom: 20%;
+                height: 50px;
+                width: 50px;
+                border-radius: 0;
+                left: 20%;
+            }
+        }
+    }
+}
+
 @media (max-width: 767px) {
     .blog_slider {
         width: 100%;

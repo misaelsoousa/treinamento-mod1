@@ -59,11 +59,13 @@
 
         .card_blog {
             width: 100%;
+            margin-right: 1em;
 
             img {
                 object-fit: cover;
                 margin-bottom: 2em;
                 width: 100%;
+                height: auto;
             }
 
             .text_blog {
@@ -272,11 +274,58 @@
 }
 
 
+@media (max-width: 1720px) {
+    .blog_content {
+        .blog_container {
+            display: block;
 
-@media (max-width: 767px) {
+            .card_content {
+                margin-bottom: 10em;
+            }
+        }
+
+        .blog_foot {
+            display: block;
+
+            .date_information {
+                width: 50%;
+                margin: 0 auto;
+                margin-top: 2em;
+            }
+        }
+    }
+}
+
+@media (max-width: 1220px) {
+    .blog_content {
+
+        .blog_foot {
+            .left_foot {
+
+                .item_foot {
+                    .date_day {
+                        width: 100%;
+                    }
+
+                    .text_foot {
+
+                        h2 {
+                            width: 100%;
+
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+@media (max-width: 875px) {
 
     .blog_content {
-        width: 100vw;
+        width: 100%;
 
         .blog_container {
             display: block;
@@ -319,6 +368,7 @@
 
                 .card_blog {
                     width: 100%;
+
 
                     img {
                         width: 100%;
@@ -418,7 +468,7 @@
 
             .date_information {
                 margin-top: 2em;
-                width: 100%;
+                width: 80%;
             }
         }
     }

@@ -30,6 +30,23 @@
     }
 }
 
+@media (max-width: 1680px) {
+    .blog {
+        .hero_blog {
+
+            .hero_text_component {
+                display: none;
+            }
+        }
+
+        .text_hero {
+            .cat_area {
+                display: none;
+            }
+        }
+    }
+}
+
 @media (max-width: 767px) {
     .blog {
         width: 100vw;

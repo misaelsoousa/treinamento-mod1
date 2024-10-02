@@ -1,5 +1,6 @@
 .hero_sobre {
     width: 100%;
+    overflow: hidden;
 
     .hero_image {
         display: block;
@@ -35,17 +36,20 @@
         background-color: #461A7E;
         position: relative;
         border-radius: 0 0 50% 50%;
-        transform: scaleX(1);
+        transform: scaleX(1.1);
 
         .detail_banner {
             display: flex;
             justify-content: center;
             align-items: center;
+            z-index: 0;
+            position: absolute;
+            bottom: calc(100% - 1px);
+            width: 100%;
 
             svg {
-                width: 99.35vw;
-                position: absolute;
-                bottom: 100%;
+                width: 100%;
+                height: 100%;
             }
         }
 
@@ -54,9 +58,10 @@
             color: #FFF;
             padding-bottom: 19em;
             margin-bottom: 5em;
+            position: relative;
 
             .text_content {
-                padding: 10em;
+                padding: 15%;
 
                 h2 {
                     font-family: 'SFRepublic', sans-serif;
@@ -93,7 +98,8 @@
                 border-radius: 10px;
                 padding-left: 3em;
                 width: 225px;
-                top: -20%;
+                top: -30%;
+                left: 0;
 
                 a {
                     text-decoration: none;
@@ -116,8 +122,9 @@
 
                     img {
                         mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
-                        width: 715px;
-                        height: 467px;
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
                     }
 
                     .play_button {
@@ -240,10 +247,122 @@ body.dark-mode {
         .inicio {
             background-color: #2D0D55;
 
-            .detail_banner {
+            .ini .detail_banner {
                 svg {
                     path {
                         fill: #2D0D55;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1900px) {
+    .hero_sobre {
+        .inicio {
+            .inicio_content {
+                .link_sobre {
+                    top: -20%;
+                    left: 2%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1670px) {
+    .hero_sobre {
+
+        .inicio {
+
+            .inicio_content {
+
+
+                .circles_hero {
+                    top: calc(100% - 100px);
+
+                    .circle {
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+
+                .link_sobre {
+                    top: -15%;
+                    left: 2%;
+
+                    a {
+                        p {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1350px) {
+    .hero_sobre {
+        .inicio {
+            .inicio_content {
+                .link_sobre {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1120px) {
+    .hero_sobre {
+
+        .inicio {
+
+            .inicio_content {
+
+                .circles_hero {
+                    .circle {
+                        width: 100px;
+                        height: 100px;
+
+                        h2 {
+                            font-size: 30px;
+                        }
+
+                        p {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1120px) {
+    .hero_sobre {
+
+        .inicio {
+
+            .inicio_content {
+
+                .circles_hero {
+                    top: calc(100% - 100px);
+
+                    .circle {
+                        width: 70px;
+                        height: 70px;
+                        margin: 1.2em;
+
+                        h2 {
+                            font-size: 20px;
+                        }
+
+                        p {
+                            font-size: 10px;
+                        }
                     }
                 }
             }
@@ -270,6 +389,7 @@ body.dark-mode {
                 .circles_hero {
                     display: block;
                     position: relative;
+                    width: 100%;
 
                     .group_circle {
                         display: flex;
@@ -317,8 +437,8 @@ body.dark-mode {
 
                     .thumb {
                         img {
-                            width: 100%;
-                            height: auto;
+                            width: 500px;
+                            height: 355px;
                         }
                     }
 

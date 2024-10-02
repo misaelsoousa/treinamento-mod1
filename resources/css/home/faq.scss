@@ -55,7 +55,7 @@
         justify-content: center;
         position: relative;
         max-width: 1400px;
-
+        padding-inline: 8em;
 
         .accordion_content {
             display: flex;
@@ -236,6 +236,8 @@ body.dark-mode {
         background-color: #2D0D55;
     }
 }
+
+
 
 @media (max-width: 767px) {
     .faq_content {

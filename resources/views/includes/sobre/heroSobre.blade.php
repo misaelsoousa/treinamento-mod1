@@ -48,8 +48,8 @@
                         <x-icons path="Youtube.svg" />
                     </button>
                 </div>
-                <div id="player" style="display: none;">
-                    <iframe width="715" height="467" src="https://www.youtube.com/embed/zEOUaLQQNRQ"
+                <div class="player" id="player" style="display: none;">
+                    <iframe width="500" height="350" src="https://www.youtube.com/embed/zEOUaLQQNRQ"
                         title="✨ASMR | Meus gatos fizeram esse asmr - no talking✨" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

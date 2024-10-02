@@ -139,6 +139,35 @@
 }
 
 
+@media(max-width: 1890px) {
+    .depoimentos {
+        .swiper_depoimentos {
+            padding-left: 2em;
+
+            .swiper-button-next {
+                right: 0;
+            }
+        }
+    }
+}
+
+@media(max-width: 990px) {
+    .depoimentos {
+        .review_page {
+            padding-left: 2em;
+            width: 50%;
+
+            .container {
+                margin: 0;
+            }
+
+            .review_title {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
 
 @media (max-width: 767px) {
     .depoimentos {
@@ -148,6 +177,7 @@
 
         .review_page {
             padding-left: 0;
+            width: 100%;
 
             .review_title {
                 padding-left: 0;
@@ -157,7 +187,6 @@
                 text-align: center;
 
                 p {
-
                     width: 80%;
                 }
             }

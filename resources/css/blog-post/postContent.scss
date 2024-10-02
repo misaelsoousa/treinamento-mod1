@@ -42,7 +42,7 @@
 
         .publicidade_content2 {
             position: absolute;
-            right: 6%;
+            right: 10%;
             top: 45%;
             border-radius: 10px;
 
@@ -67,25 +67,16 @@
             overflow: hidden;
         }
 
-        .img_content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            width: 100%;
-            object-fit: cover;
 
-            img {
-                width: 90%;
-            }
-        }
     }
 
     .img_content {
         width: 100%;
+        display: flex;
+        justify-content: center;
 
         img {
-            width: 100%;
+            width: 80%;
         }
     }
 
@@ -380,6 +371,46 @@
     }
 }
 
+@media (max-width: 1750px) {
+    .post_content {
+
+
+        .img_banner {
+
+            .publicidade_content1,
+            .publicidade_content2 {
+                display: none;
+            }
+        }
+
+        .content {
+            width: 100%;
+            flex-direction: column;
+            margin-left: 2em;
+
+            .right_post {
+                display: flex;
+                align-items: center;
+
+                .email {
+                    width: 100%;
+                }
+
+                .publicidade {
+                    img {
+                        width: 50%;
+                    }
+                }
+
+                .date_information {
+                    width: 40%;
+                    margin-left: 2em;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 767px) {
     .post_content {
         width: 100%;
@@ -389,8 +420,12 @@
             display: none;
         }
 
+        .icons_social {
+            justify-content: center;
+        }
+
         .content {
-            width: 100%;
+            width: 90%;
             display: block;
             padding: 1em;
 
@@ -428,6 +463,7 @@
 
             .right_post {
                 margin: 0;
+                display: block;
 
                 .email {
                     display: block;
@@ -456,6 +492,12 @@
                             padding: 1em 2em;
                         }
                     }
+                }
+
+                .date_information {
+                    width: 100%;
+                    margin: 0;
+                    margin-top: 2em;
                 }
             }
         }

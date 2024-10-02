@@ -183,7 +183,7 @@
         </div>
     </div>
     <div class="blog_foot">
-        <div>
+        <div class="left_foot">
             <div class="item_foot">
                 <img src="img/footBlog.png" alt="">
                 <div class="left_item_foot">

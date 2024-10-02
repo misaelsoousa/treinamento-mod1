@@ -29,6 +29,16 @@ body.dark-mode {
     }
 }
 
+@media (max-width: 1650px) {
+    .blog_post {
+        .hero_post {
+            h1 {
+                width: 100%;
+            }
+        }
+    }
+}
+
 @media (max-width: 767px) {
     .blog_post {
         .hero_post {

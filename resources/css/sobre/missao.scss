@@ -1,6 +1,9 @@
 .missao {
     padding-top: 10em;
     display: flex;
+    width: 100vw;
+    height: auto;
+    object-fit: contain;
 
     h2 {
         font-family: 'SFRepublic';
@@ -45,8 +48,9 @@
     }
 
     .left_content {
+        width: 33%;
+
         .left_top {
-            width: 400px;
             height: 400px;
             background-color: #FFF0FE;
             border-radius: 12px;
@@ -78,7 +82,7 @@
 
         .left_bottom {
 
-            width: 300px;
+
             padding-left: 3em;
             padding-top: 1.5em;
 
@@ -89,16 +93,23 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         margin: 0 auto;
         text-align: center;
+        width: 30%;
+        margin-left: 10%;
 
         .mid_top {
-            width: 800px;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             padding-top: 4em;
+
+            h2 {
+                display: none;
+            }
 
             .icon_circle {
                 margin-bottom: 3em;
@@ -113,21 +124,31 @@
         .mid_bottom {
             margin-top: 5em;
             border-radius: 12px;
-            width: 800px;
+            width: 155%;
             height: 400px;
             background-color: #FFF0FE;
             position: relative;
 
             .cat_sobre {
-                position: absolute;
+
                 bottom: -60%;
                 left: -15%;
+
+                img {
+                    position: absolute;
+                    bottom: -40%;
+                    left: 0;
+                    width: 100%;
+                    object-fit: contain;
+                }
             }
         }
     }
 
     .right_content {
         z-index: 2;
+        width: 33%;
+        margin-left: 10%;
 
         .right_top {
             width: 400px;
@@ -157,6 +178,10 @@
             padding-top: 5em;
             padding-left: 3em;
 
+            h2 {
+                display: none;
+            }
+
             .icon_circle {
                 margin-top: 2em;
                 margin-left: 2em;
@@ -165,12 +190,47 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1550px) {
+    .missao {
+        .mid_content {
+
+            .mid_bottom {
+
+                .cat_sobre {
+
+                    img {
+                        bottom: -25%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .missao {
+        .mid_content {
+
+            .mid_bottom {
+
+                .cat_sobre {
+
+                    img {
+                        bottom: -25%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
     .missao {
         width: 100%;
         display: block;
 
         .left_content {
+            width: 100%;
 
             .left_top {
 
@@ -195,11 +255,17 @@
         }
 
         .mid_content {
+            width: 100%;
+            margin-left: 0;
 
             .mid_top {
                 width: inherit;
                 align-items: center;
                 padding: 3em;
+
+                h2 {
+                    display: block;
+                }
             }
 
             .mid_bottom {
@@ -208,6 +274,9 @@
         }
 
         .right_content {
+            width: 100%;
+            margin-left: 0;
+
             .right_top {
                 display: none;
             }
@@ -220,6 +289,10 @@
                 justify-content: center;
                 text-align: center;
                 padding: 3em;
+
+                h2 {
+                    display: block;
+                }
 
                 .icon_circle {
                     margin: 0;

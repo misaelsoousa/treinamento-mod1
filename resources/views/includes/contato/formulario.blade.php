@@ -26,8 +26,8 @@
                 </div>
             </div>
         </div>
+        <img class="cat_contato" src="img/catContato.png" alt="">
     </div>
-    <img class="cat_contato" src="img/catContato.png" alt="">
     <div class="maps">
         <h2>Onde estamos</h2>
         <iframe

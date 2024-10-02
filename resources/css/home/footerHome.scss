@@ -101,6 +101,10 @@
                 bottom: -12%;
                 right: -10%;
                 z-index: 2;
+
+                img {
+                    width: 100%;
+                }
             }
 
             .ellipseFooter {
@@ -357,6 +361,209 @@ body.dark-mode {
 }
 
 
+@media (max-width: 1700px) {
+    .footer {
+        .footer_content {
+            .foot {
+                padding-left: 2em;
+            }
+
+            .footer_tips {
+                h2 {
+                    padding-left: 2em;
+                }
+
+                p {
+                    padding-left: 2em;
+                }
+
+                .footer_input {
+                    padding-left: 2em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1470px) {
+    .footer {
+        .footer_content {
+            .footer_form {
+                .catFooter {
+                    position: absolute;
+                    bottom: -12%;
+                    right: -25%;
+                    z-index: 2;
+
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .footer {
+        .footer_content {
+            .foot {
+                flex-direction: column;
+
+                .foot_right {
+
+                    div {
+                        padding-left: 0;
+
+                        &:first-child {
+                            border: none;
+
+                            &::before {
+                                display: none;
+                            }
+                        }
+
+                        &:last-child {
+                            border: none;
+                        }
+                    }
+                }
+
+                .catLogoFooter {
+                    right: 0;
+                    left: inherit;
+                }
+            }
+
+            .footer_tips {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                height: inherit;
+                border-radius: 0;
+
+                h2 {
+                    padding-left: 0;
+                }
+
+                p {
+                    padding-left: 0;
+                }
+
+                .footer_input {
+                    padding-left: 0;
+                    margin-left: 1em;
+                    display: block;
+
+                    &::before {
+                        display: none;
+                    }
+
+                    input {
+                        width: 100%;
+                        border: 1px solid #FFF;
+                        padding: 1em;
+                    }
+
+                    button {
+                        margin-top: 2em;
+                        margin-bottom: 2em;
+                        width: 100%;
+                        margin-left: 0;
+                    }
+                }
+
+                .footer_mobile {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    padding: 1em;
+                    margin-left: 2em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer {
+        .footer_content {
+            .footer_form {
+                .catFooter {
+                    position: absolute;
+                    bottom: -12%;
+                    right: -40%;
+                    z-index: 2;
+
+                    img {
+                        width: 70%;
+                    }
+                }
+            }
+
+            .footer_card {
+
+
+                .card_content {
+                    padding: 1em;
+
+                    button {
+                        white-space: nowrap;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .footer {
+        .footer_content {
+            .footer_form {
+                .catFooter {
+                    right: -50%;
+
+                    img {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer {
+        .footer_content {
+            .footer_form {
+                form {
+
+                    input,
+                    textarea {
+                        width: 80%;
+                    }
+
+                    .inputs1 {
+                        select {
+                            width: calc(40% - 0.2em);
+                        }
+
+                        input {
+                            width: calc(40% - 0.2em);
+                        }
+                    }
+                }
+
+                .catFooter {
+                    display: none;
+                }
+            }
+        }
+    }
+}
 
 
 @media (max-width: 767px) {
@@ -378,6 +585,7 @@ body.dark-mode {
 
             .footer_card {
                 display: block;
+                width: 100%;
 
                 .card_content {
                     border-radius: 0;

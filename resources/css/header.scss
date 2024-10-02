@@ -3,7 +3,7 @@
     justify-content: center;
     z-index: 5;
     position: absolute;
-    width: 95vw;
+    width: 100%;
     font-family: "Roboto", sans-serif;
 
     .logo_navbar {
@@ -295,7 +295,32 @@ body.dark-mode {
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1600px) {
+    .navbar_content {
+        .navbar {
+            .item_navbar {
+                padding: .5em;
+            }
+        }
+    }
+}
+
+@media (max-width: 1460px) {
+    .navbar_content {
+        .navbar {
+            .item_navbar {
+                padding: 0;
+
+                button {
+                    margin-left: 1em;
+                    padding: 2em 4em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1240px) {
     .navbar_content {
         display: none;
     }

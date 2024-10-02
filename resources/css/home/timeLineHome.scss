@@ -7,23 +7,28 @@
         top: -20%;
         left: 10%;
         position: absolute;
+        object-fit: contain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        img {
-            position: absolute;
-
+        svg {
+            width: 100%;
+            height: auto;
+            z-index: -1;
         }
 
         h3 {
             position: absolute;
             bottom: 30%;
-            left: 30%;
             color: #FFF;
             font-family: 'SFRepublic';
+            z-index: 2;
         }
     }
 
     .top_history {
-        padding-left: 50%;
+        padding-left: 70%;
 
         h1 {
             font-family: 'SFRepublic';
@@ -33,6 +38,7 @@
             font-weight: bold;
         }
     }
+
 
     .swiper_history {
         width: 100%;
@@ -88,9 +94,6 @@
                     font-size: 16px;
                     color: #333;
                 }
-
-                .top_img {}
-
 
             }
 
@@ -187,6 +190,83 @@
     }
 }
 
+@media (max-width: 1380px) {
+    .history {
+        .pata_grande {
+            top: -10%;
+            left: 0;
+
+            svg {
+                width: 80%;
+            }
+
+            h3 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .history {
+        .pata_grande {
+            bottom: 30%;
+            left: -3%;
+
+            svg {
+                width: 80%;
+            }
+
+            h3 {
+                bottom: 35%;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .history {
+
+        .pata_grande {
+            bottom: 30%;
+            left: -15%;
+
+            svg {
+                width: 50%;
+            }
+
+            h3 {
+                bottom: 35%;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 800px) {
+    .history {
+
+        .swiper-slide-next {
+            &::before {
+                left: -70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .history {
+
+        .swiper-slide-next {
+            &::before {
+                left: -70%;
+            }
+        }
+    }
+}
+
 @media (max-width: 767px) {
 
     .history {
@@ -224,6 +304,18 @@
 
             .swiper-button-next {
                 right: 0;
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: 630px) {
+    .history {
+        .swiper-slide-next {
+            &::before {
+                left: inherit;
             }
         }
     }

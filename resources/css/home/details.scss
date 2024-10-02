@@ -3,7 +3,6 @@
     position: relative;
     display: flex;
     width: 100%;
-    justify-content: center;
     flex-direction: column;
 
     .detail_banner {
@@ -13,11 +12,11 @@
         z-index: 2;
         position: absolute;
         bottom: calc(100% - 1px);
+        width: 100%;
 
         svg {
-            display: flex;
-            justify-content: center;
-            width: 99.35vw;
+            width: 100%;
+            height: 100%;
         }
     }
 
@@ -41,6 +40,7 @@
         z-index: 3;
         padding: 0;
 
+
         &::before {
             content: "";
             height: 427px;
@@ -61,27 +61,24 @@
             margin-top: 5em;
             width: 100%;
             display: flex;
-            padding-left: 10em;
             position: relative;
             z-index: 3;
             background: linear-gradient(90deg, rgba(60, 22, 108, 0.6587009803921569) 0%, rgba(45, 13, 85, 1) 63%);
             backdrop-filter: blur(10px);
-            width: 100%;
-
-
-
+            overflow: hidden;
         }
 
         .ong_bg {
             position: absolute;
             top: 25%;
-            right: 20%;
+            left: 50%;
         }
 
         .apoie_content {
-            max-width: 1400px;
             width: 100%;
             padding-top: 10%;
+            padding-left: 0;
+            margin-left: 10%;
 
             h1,
             p {
@@ -102,7 +99,7 @@
                 padding-top: 3em;
 
                 button {
-
+                    white-space: nowrap;
                     position: inherit;
                     font-size: 20px;
                     padding-inline: 3.5em;
@@ -141,13 +138,13 @@
 
                 .dt1 {
                     position: absolute;
-                    right: 100%;
+                    right: 99.5%;
                     top: 0;
                 }
 
                 .dt2 {
                     position: absolute;
-                    left: 100%;
+                    left: 99.5%;
                     top: 0;
                     transform: rotate(270deg);
                 }
@@ -178,7 +175,7 @@
 
                 .dt2 {
                     position: absolute;
-                    left: 100%;
+                    left: 99.5%;
                     bottom: 0;
                     transform: rotate(180deg);
                 }
@@ -202,20 +199,19 @@
 
             .info_card {
                 width: 100%;
-                padding: 62px;
+                padding: 61px;
 
                 &:first-child {
-
                     border-bottom: 1px solid #461A7E;
                 }
 
                 &:last-child {
-                    padding-top: 61px;
                     border-top: 1px solid #461A7E;
                 }
 
                 p {
                     position: relative;
+                    white-space: nowrap;
                 }
 
                 span {
@@ -256,14 +252,11 @@ body.dark-mode {
 
         .details_blur {
             background: linear-gradient(90deg, rgba(36, 13, 65, 0.659) 0%, rgb(29, 8, 54) 63%);
-
-
         }
 
         .detail_banner {
             svg {
                 path {
-
                     fill: #2D0D55;
                 }
             }
@@ -271,6 +264,8 @@ body.dark-mode {
 
         .details_content {
             .apoie_cards {
+
+
                 .ong_bg {
                     display: none;
                 }
@@ -313,6 +308,27 @@ body.dark-mode {
     }
 }
 
+@media (max-width: 1050px) {
+    .details {
+        .details_content {
+
+            .apoie_content {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .details {
+        .details_content {
+            .line_detail {
+                left: -400px;
+            }
+        }
+    }
+
+}
 
 @media (max-width: 767px) {
     .details {
@@ -394,6 +410,7 @@ body.dark-mode {
 
             .apoie_content {
                 margin-left: 2em;
+                margin-right: 2em;
 
                 .btn_details {
                     button {

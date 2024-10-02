@@ -177,6 +177,16 @@ document.addEventListener('DOMContentLoaded', function () {
             prevEl: '.swiper-button-prev',
             clickable: true,
         },
+        breakpoints: {
+            1420: {
+                slidesPerView: 5,
+                spaceBetween: 30
+            },
+            1890: {
+                slidesPerView: 5,
+                spaceBetween: 0
+            }
+        }
 
     });
 });

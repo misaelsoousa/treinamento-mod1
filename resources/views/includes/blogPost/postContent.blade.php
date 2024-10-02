@@ -182,32 +182,34 @@
             </div>
         </div>
         <div class="right_post">
-            <div class="email">
-                <div>
-                    <h2>Assinar blog por e-mail</h2>
-                    <p>
-                        Digite seu endereço de e-mail para assinar este blog e receber notificações de novas
-                        publucações
-                        por
-                        e-mail.
-                    </p>
+            <div class="left_right">
+                <div class="email">
+                    <div>
+                        <h2>Assinar blog por e-mail</h2>
+                        <p>
+                            Digite seu endereço de e-mail para assinar este blog e receber notificações de novas
+                            publucações
+                            por
+                            e-mail.
+                        </p>
+                    </div>
+                    <div class="input_email">
+                        <form>
+                            <input type="text" placeholder="Digite seu e-mail:">
+                            <button>
+                                ASSINAR
+                            </button>
+                        </form>
+                    </div>
                 </div>
-                <div class="input_email">
-                    <form>
-                        <input type="text" placeholder="Digite seu e-mail:">
-                        <button>
-                            ASSINAR
-                        </button>
-                    </form>
+                <div class="publicidade">
+                    <p>Publicidade</p>
+                    <img src="img/publicidade.png" alt="">
                 </div>
-            </div>
-            <div class="publicidade">
-                <p>Publicidade</p>
-                <img src="img/publicidade.png" alt="">
-            </div>
-            <div class="publicidade">
-                <p>Publicidade</p>
-                <img src="img/publicidade.png" alt="">
+                <div class="publicidade">
+                    <p>Publicidade</p>
+                    <img src="img/publicidade.png" alt="">
+                </div>
             </div>
             <div class="date_information">
                 <h2>Mais lidas</h2>
