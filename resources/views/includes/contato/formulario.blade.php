@@ -5,13 +5,15 @@
         <br>
         <input placeholder="Nome:" type="text"> </br>
         <input placeholder="E-mail:" type="text"></br>
-        <input class="telefone" placeholder="Telefone/Whatsapp:" type="text">
-        <select>
-            <option value="" disabled selected>Assunto:</option>
-            <option>Gatos</option>
-            <option>Gatos</option>
-            <option>Gatos</option>
-        </select></br>
+        <div class="inputs_mobile">
+            <input class="telefone" placeholder="Telefone/Whatsapp:" type="text">
+            <select>
+                <option value="" disabled selected>Assunto:</option>
+                <option>Gatos</option>
+                <option>Gatos</option>
+                <option>Gatos</option>
+            </select></br>
+        </div>
         <textarea placeholder="Mensagem:"></textarea>
         <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
         </form>

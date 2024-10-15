@@ -18,6 +18,7 @@
                         </div>
                     </div>
                     <div class="date_hour">
+                        <x-icons path="relogio.svg" />
                         <span>10:00 ás 18:00</span>
                     </div>
                 </div>
@@ -40,6 +41,7 @@
 
                     </div>
                     <div class="date_hour">
+                        <x-icons path="relogio.svg" />
                         <span>10:00 ás 18:00</span>
                     </div>
                 </div>
@@ -62,6 +64,7 @@
 
                     </div>
                     <div class="date_hour">
+                        <x-icons path="relogio.svg" />
                         <span>10:00 ás 18:00</span>
                     </div>
                 </div>
@@ -84,6 +87,7 @@
 
                     </div>
                     <div class="date_hour">
+                        <x-icons path="relogio.svg" />
                         <span>10:00 ás 18:00</span>
                     </div>
                 </div>
@@ -97,12 +101,13 @@
         <div class="poster_item">
             <a href="{{ route('blog-post') }}">
                 <img src="img/blogImage.png" alt="">
+                <div class="poster_text">
+                    <x-toogle-title />
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua.</h2>
+                </div>
             </a>
-            <div class="poster_text">
-                <x-toogle-title />
-                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.</h2>
-            </div>
         </div>
         <div class="poster_item">
             <a href="{{ route('blog-post') }}">

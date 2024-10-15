@@ -227,18 +227,22 @@
         .middle_cats {
             display: flex;
             justify-content: space-evenly;
-            padding-left: 5em;
+            margin: 0 auto;
+            margin-left: 7.2em;
             border-left: 1px solid rgba($color: #202020, $alpha: .1);
             position: relative;
             perspective: 1000px;
 
             img {
-                width: 770px;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
             }
 
             .item_middle {
                 position: relative;
                 transition: transform 0.5s ease;
+                margin-right: 2em;
 
                 .middle_info {
                     position: absolute;
@@ -369,6 +373,37 @@
 
 }
 
+body.dark-mode {
+    .listagem_gatos {
+        background-color: #333;
+
+        .adocao_content {
+
+            .navbar_adocao {
+                li {
+                    button {
+
+                        color: #FFF !important;
+                    }
+                }
+            }
+
+
+
+            .item_list {
+                display: none;
+
+                .info_cat {
+                    .content_item {
+                        color: #FFF !important;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
 @media (max-width: 1650px) {
     .listagem_gatos {
 
@@ -379,6 +414,23 @@
                 }
             }
 
+            .list_cats {
+
+                .item_list {
+                    .img_list {
+
+                        img {
+
+                            height: 350px !important;
+                            width: auto;
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        display: none;
+                    }
+                }
+            }
         }
 
         .list_cats {
@@ -388,9 +440,7 @@
         }
 
         .middle_cats {
-            .item_middle:last-child {
-                display: none;
-            }
+            .item_middle {}
         }
     }
 }
@@ -407,12 +457,7 @@
             }
         }
 
-        .middle_cats {
-
-            .item_middle {
-                display: none;
-            }
-        }
+        .middle_cats {}
 
 
     }
@@ -424,58 +469,39 @@
         margin-top: 5em !important;
 
         .adocao_content {
+
             .navbar_adocao {
                 padding: 0;
                 border-right: 0;
 
+
+                ul {
+                    flex-direction: column;
+                }
+
                 li {
+                    width: 100vw;
+
                     button {
-                        font-size: 10px;
-                        padding: 15px;
-                        white-space: nowrap;
+                        width: 100%;
+                        font-size: 25px;
+                        border: none;
+                        padding: 1em 0;
+
+
+                    }
+
+                    .selected {
+                        border: none;
+                        font-size: 25px;
                     }
                 }
-            }
-
-            .middle_cats {
-                display: block;
-                padding: 1em;
-
-                img {
-                    padding-bottom: 1em;
-                    width: 100%;
-                }
-
-                .middle_info {
-                    margin-bottom: 1em;
-                }
-
-                .item_middle {
-                    &:hover {
-                        transform: rotateY(0) !important;
-
-                        &::before {
-                            opacity: 0 !important;
-
-                        }
-
-                        &::after {
-                            opacity: 0 !important;
-                        }
-                    }
-                }
-            }
-
-            .bottom_cats {
-                display: none;
             }
 
             .list_cats {
                 display: block;
                 padding: 0;
                 border: none;
-
-
 
                 .item_list {
                     margin-top: 2em;
@@ -567,21 +593,6 @@
 
                 button {
                     margin: 5em 0;
-                }
-            }
-
-            .button_area {
-                padding: 1em;
-
-
-                button {
-                    white-space: nowrap;
-                    width: 100%;
-                    font-size: 20px;
-
-                    &::before {
-                        display: none;
-                    }
                 }
             }
         }

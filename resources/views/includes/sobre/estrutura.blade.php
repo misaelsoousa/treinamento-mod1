@@ -1,5 +1,5 @@
-<div class="estrutura" id="estrutura">
-    <div class="estrutura_content">
+<div class="estrutura">
+    <div id="sectionEstrutura" class="estrutura_content">
         <div class="first_cat">
             <h2>Conheça nossa <br /> estrutura completa</h2>
             <img src="img/estruturaCat1.png" alt="">

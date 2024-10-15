@@ -10,10 +10,16 @@
 
     .list_detail {
         position: absolute;
-        bottom: -10px;
-        width: 100%;
+        bottom: -1%;
         left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
 
+        svg {
+            width: 100%;
+        }
     }
 
     .navbar_adocao {
@@ -39,20 +45,30 @@
 
                 button {
 
-                    padding: 2em;
-                    padding-inline: 7em;
+                    padding: 1em;
+                    padding-inline: 5em;
                     background: none;
                     color: #FFF;
                     border: none;
                     font-family: 'SFRepublic';
-                    border-bottom: 5px solid transparent;
+                    border: 15px solid transparent;
+                    font-size: 20px;
+                    height: 100%;
+                    transition: .3s ease;
+
+                    &:hover {
+                        background-color: #330D64;
+                    }
+
                 }
+
 
                 .selected {
                     background-color: #330D64;
                     font-weight: bold;
                     border: 1px solid #FF87F3;
                     border-bottom: 5px solid #FF87F3;
+                    font-size: 25px;
                 }
             }
         }
@@ -239,6 +255,16 @@ body.dark-mode {
         button {
             color: #CCCCCC;
         }
+
+        .list_detail {
+            mask-image: #333;
+
+            svg {
+                path {
+                    fill: #333;
+                }
+            }
+        }
     }
 }
 
@@ -256,8 +282,19 @@ body.dark-mode {
 
             .list_cats {
 
-                .item_list:nth-child(4) {
-                    display: none;
+                .item_list {
+                    .img_list {
+
+                        img {
+
+                            height: 350px !important;
+                            width: auto;
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        display: none;
+                    }
                 }
             }
         }
@@ -283,20 +320,38 @@ body.dark-mode {
 @media (max-width: 767px) {
     .adocao {
         margin-bottom: 2em;
+        width: 100%;
 
         .list_detail {
             display: none;
         }
 
         .adocao_content {
+
             .navbar_adocao {
                 padding: 0;
                 border-right: 0;
 
+
+                ul {
+                    flex-direction: column;
+                }
+
                 li {
+                    width: 100vw;
+
                     button {
-                        font-size: 10px;
-                        padding: 15px;
+                        width: 100%;
+                        font-size: 25px;
+                        border: none;
+                        padding: 1em 0;
+
+
+                    }
+
+                    .selected {
+                        border: none;
+                        font-size: 25px;
                     }
                 }
             }

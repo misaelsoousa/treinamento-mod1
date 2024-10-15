@@ -2,6 +2,10 @@
     padding-bottom: 20em;
     position: relative;
 
+    .swiper_clientes_mobile {
+        display: none;
+    }
+
     .swiper_clientes {
         width: 100%;
         max-width: 1920px;
@@ -13,10 +17,11 @@
             position: absolute;
             z-index: 2;
             left: 20%;
-            width: 30%;
+            background-color: #FFF;
 
             h2 {
                 font-family: 'SFRepublic', sans-serif;
+                margin-bottom: 1em;
             }
 
             p {
@@ -73,6 +78,7 @@
         }
     }
 
+
     .swiper-pagination {
         position: absolute;
         bottom: 100px;
@@ -88,10 +94,40 @@
     }
 }
 
+body.dark-mode {
+    .clientes {
+        background-color: #333;
+        color: #FFF;
+
+        .title_clientes {
+            background-color: #333;
+        }
+    }
+}
+
 @media (max-width: 747px) {
     .clientes {
+        padding-bottom: 0;
+
         .title_clientes {
             display: none;
+        }
+
+        .swiper_clientes {
+            display: none;
+        }
+
+        .swiper_clientes_mobile {
+            display: block;
+
+            .swiper-slide {
+                width: 33vw;
+
+                img {
+                    margin: 1em;
+                    width: 80%;
+                }
+            }
         }
     }
 }

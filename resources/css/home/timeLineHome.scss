@@ -1,16 +1,17 @@
 .history {
     position: relative;
     padding-bottom: 5em;
-    margin-top: 30em;
+    padding-top: 20em;
 
     .pata_grande {
-        top: -20%;
+        top: 10%;
         left: 10%;
         position: absolute;
         object-fit: contain;
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 2;
 
         svg {
             width: 100%;
@@ -28,7 +29,8 @@
     }
 
     .top_history {
-        padding-left: 70%;
+        padding-left: 60%;
+        width: 85%;
 
         h1 {
             font-family: 'SFRepublic';
@@ -45,7 +47,7 @@
         padding: 50px 0;
         margin-top: 100px;
         position: relative;
-
+        z-index: 3;
 
         .swiper-wrapper {
             margin-left: 20%;
@@ -71,6 +73,17 @@
                     display: flex;
                     flex-direction: column;
                     align-items: start;
+
+                    h2 {
+                        font-family: 'LemonMilk';
+                        font-weight: 300;
+                        margin-bottom: 1em;
+
+                    }
+
+                    .top_img {
+                        margin-bottom: 1.5em;
+                    }
                 }
 
                 .top_title {
@@ -86,13 +99,19 @@
 
                 .timeline_text {
                     width: 232px;
-
                 }
 
                 p {
                     margin: 0;
                     font-size: 16px;
                     color: #333;
+                    margin-bottom: 1em;
+
+                    strong {
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
                 }
 
             }
@@ -140,7 +159,7 @@
         .swiper-button-next {
             position: absolute;
             background-color: #461A7E;
-            top: 25%;
+            top: 22.5%;
             width: 50px;
             height: 50px;
             right: calc(10% - 52px);
@@ -160,7 +179,7 @@
             position: absolute;
             background-color: #FFF;
             border: 2px solid #461A7E;
-            top: 25%;
+            top: 22.5%;
             width: 50px;
             height: 50px;
             left: inherit;
@@ -177,17 +196,31 @@
             }
         }
 
-        .timeline_next {
+        .swiper-pagination {
             position: absolute;
-            display: flex;
             right: 0;
-            top: 15%;
+            left: inherit;
+            top: 10%;
+            width: auto;
+            right: 2%;
 
-            p {
-                padding: .5em;
+            span {
+                font-family: 'LemonMilk';
+                font-size: 12px;
+                background: none;
+                border-radius: 0;
+                padding: 1.5em;
             }
         }
     }
+}
+
+body.dark-mode {
+    .history {
+        background-color: #333;
+        color: #FFF;
+    }
+
 }
 
 @media (max-width: 1380px) {
@@ -224,6 +257,36 @@
         }
     }
 }
+
+@media (max-width: 1500px) {
+    .history {
+        .swiper_history {
+            .swiper-button-next {
+                right: 15%;
+            }
+
+            .swiper-button-prev {
+                right: 19%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .history {
+        .swiper_history {
+            .swiper-button-next {
+                right: 2%;
+            }
+
+            .swiper-button-prev {
+                right: 7%;
+            }
+        }
+    }
+}
+
+
 
 @media (max-width: 1000px) {
     .history {
@@ -288,11 +351,17 @@
             justify-content: center;
             padding-left: 0;
             padding: 1.5em;
+            margin: 0 auto;
+
+            p {
+                line-height: 2em;
+            }
         }
 
         .swiper_history {
             margin-left: 0;
             padding-bottom: 0;
+            margin-top: 3em;
 
             .timeline_next {
                 display: none;
@@ -304,6 +373,10 @@
 
             .swiper-button-next {
                 right: 0;
+            }
+
+            .swiper-pagination {
+                top: 0;
             }
         }
 

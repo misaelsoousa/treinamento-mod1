@@ -50,6 +50,11 @@
             resize: none;
         }
 
+        select {
+            font-size: 15px;
+            color: rgba($color: #000000, $alpha: .6);
+        }
+
         .foot_contato {
             width: 100%;
             height: 300px;
@@ -96,11 +101,9 @@
                         right: -20%;
                         bottom: -55%;
                     }
-
                 }
             }
         }
-
     }
 
     .cat_contato {
@@ -108,9 +111,6 @@
         right: 10%;
         bottom: 40%;
         width: 30%;
-
-
-        img {}
     }
 
     .maps {
@@ -118,6 +118,8 @@
         flex-direction: column;
         align-items: center;
         margin-top: 3em;
+        filter: grayscale(100%);
+        transition: .5s;
 
         h2 {
             margin-bottom: 2em;
@@ -128,11 +130,18 @@
         iframe {
             width: 100%;
         }
+
+        &:hover {
+            filter: none;
+        }
     }
 }
 
 body.dark-mode {
     .formulario {
+        background-color: #333;
+        color: #FFF;
+
         .formulario_content {
             .foot_contato {
                 background-color: #2D0D55;
@@ -166,7 +175,8 @@ body.dark-mode {
     .formulario {
         .formulario_content {
             .cat_contato {
-                display: none;
+                right: 0;
+                top: 20%;
             }
 
             .foot_contato {
@@ -178,6 +188,17 @@ body.dark-mode {
     }
 }
 
+@media (max-width: 980px) {
+    .formulario {
+        .formulario_content {
+            .cat_contato {
+                display: none;
+            }
+        }
+    }
+}
+
+
 @media (max-width: 767px) {
     .formulario {
         width: 100%;
@@ -185,6 +206,14 @@ body.dark-mode {
 
         .cat_contato {
             display: none;
+        }
+
+        .inputs_mobile {
+
+            select,
+            input {
+                width: 100%;
+            }
         }
 
         .formulario_content {
@@ -198,10 +227,15 @@ body.dark-mode {
 
             .telefone,
             select {
-                width: 49%;
+                width: 100%;
 
                 &::placeholder {
                     font-size: 12px;
+                }
+
+                option {
+                    font-size: 12px;
+                    width: 100%;
                 }
             }
 

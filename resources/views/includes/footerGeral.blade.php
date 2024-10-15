@@ -61,23 +61,23 @@
                     <h2>ACESSE</h2>
                     <div>
                         <x-icons path="arrowLink.svg" />
-                        <a href="#">Home</a>
+                        <a href="{{ route('home') }}">Home</a>
                     </div>
                     <div>
                         <x-icons path="arrowLink.svg" />
-                        <a href="#">Quem somos</a>
+                        <a href="{{ route('sobre') }}">Quem somos</a>
                     </div>
                     <div>
                         <x-icons path="arrowLink.svg" />
-                        <a href="#">Blog</a>
+                        <a href="{{ route('blog') }}">Blog</a>
                     </div>
                     <div>
                         <x-icons path="arrowLink.svg" />
-                        <a href="#">Encontrar gatinhos</a>
+                        <a href="{{ route('encontrar-gatinhos') }}">Encontrar gatinhos</a>
                     </div>
                     <div>
                         <x-icons path="arrowLink.svg" />
-                        <a href="#">Contato</a>
+                        <a href="{{ route('contato') }}">Contato</a>
                     </div>
                 </div>
             </div>
@@ -90,12 +90,19 @@
                     <h2>HORÁRIO DE ATENDIMENTO</h2>
                     <p>Seg a Sex de 08h às 18h
                         Sábado de 08h às 14h</p>
+                    <img class="footerHorario" src="img/footerHorario.png" alt="">
+
                 </div>
             </div>
             <div class="catLogoFooter">
                 <x-icons path="catLogoFooter.svg" />
             </div>
         </div>
+        <div class="arrow_topo">
+            <a href="#">
+                <x-icons path="arrowTopo.svg" />
+                <p>TOPO</p>
+            </a>
+        </div>
     </div>
-
 </div>

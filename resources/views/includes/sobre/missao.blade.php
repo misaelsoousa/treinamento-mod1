@@ -1,4 +1,4 @@
-<div class="missao container">
+<div class="missao container" id="missao">
     <div class="left_content">
         <div class="left_top">
             <h2>Missão</h2>
@@ -21,11 +21,13 @@
     </div>
     <div class="mid_content">
         <div class="mid_top">
-            <h2 class="mobile_text">Missão</h2>
-            <div class="icon_circle">
-                <div class="icon_white">
-                    <div class="icon_area">
-                        <x-icons path="sobreHuman.svg" />
+            <div class="mobile_column">
+                <h2 class="mobile_text">Missão</h2>
+                <div class="icon_circle">
+                    <div class="icon_white">
+                        <div class="icon_area">
+                            <x-icons path="sobreHuman.svg" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -47,9 +49,12 @@
             <h2>Valores</h2>
         </div>
         <div class="right_bottom">
-            <h2 class="mobile_text">Valores</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
+            <div>
+                <h2 class="mobile_text">Valores</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.</p>
+            </div>
             <div class="icon_circle">
                 <div class="icon_white">
                     <div class="icon_area">

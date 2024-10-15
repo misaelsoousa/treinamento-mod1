@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
 
     const timelineSlider = new Swiper('.swiper_history', {
-        modules: [Navigation, EffectFade],
+        modules: [Navigation, EffectFade, Pagination],
         slidesPerView: 4,
         spaceBetween: 50,
         loop: true,
@@ -32,6 +32,15 @@ document.addEventListener('DOMContentLoaded', function () {
             prevEl: '.swiper-button-prev',
             clickable: true,
         },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                var date = document.querySelectorAll('.swiper-slide')[index + 3].getAttribute('data-date');
+                return '<span class="' + className + '">' + date + '</span>';
+            }
+        },
+
         breakpoints: {
             300: {
                 slidesPerView: 1,
@@ -48,11 +57,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
 // swiper depoimentos
 document.addEventListener('DOMContentLoaded', function () {
     const timelineSlider = new Swiper('.swiper_depoimentos', {
         modules: [Navigation, EffectFade],
-        slidesPerView: 3,
+        slidesPerView: 2.5,
         loop: true,
         navigation: {
             nextEl: '.swiper-button-next',
@@ -62,14 +73,13 @@ document.addEventListener('DOMContentLoaded', function () {
         breakpoints: {
             375: {
                 slidesPerView: 1,
-                spaceBetween: 20
             },
-            1420: {
+            1550: {
                 slidesPerView: 2,
-                spaceBetween: 30
+
             },
             1890: {
-                slidesPerView: 3
+                slidesPerView: 2.5
             }
         }
     });
@@ -121,15 +131,12 @@ document.addEventListener('DOMContentLoaded', function () {
         breakpoints: {
             375: {
                 slidesPerView: 1,
-                spaceBetween: 20
+
             },
-            1420: {
-                slidesPerView: 2,
-                spaceBetween: 30
-            },
-            1890: {
+            767: {
+
                 slidesPerView: 3
-            }
+            },
         }
 
     });
@@ -150,17 +157,7 @@ document.addEventListener('DOMContentLoaded', function () {
             clickable: true,
         },
         breakpoints: {
-            375: {
-                slidesPerView: 1,
-                spaceBetween: 20
-            },
-            1420: {
-                slidesPerView: 2,
-                spaceBetween: 30
-            },
-            1890: {
-                slidesPerView: 3
-            }
+
         }
     });
 });
@@ -178,9 +175,12 @@ document.addEventListener('DOMContentLoaded', function () {
             clickable: true,
         },
         breakpoints: {
-            1420: {
+            343: {
+                slidesPerView: 3,
+            },
+            767: {
                 slidesPerView: 5,
-                spaceBetween: 30
+                spaceBetween: 0
             },
             1890: {
                 slidesPerView: 5,
@@ -208,3 +208,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 });
+
+// swiper clientes mobile
+document.addEventListener('DOMContentLoaded', function () {
+
+    const timelineSlider = new Swiper('.swiper_clientes_mobile', {
+        modules: [Pagination, EffectFade],
+        slidesPerView: 3,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+    });
+});
+

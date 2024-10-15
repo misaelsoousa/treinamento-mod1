@@ -1,7 +1,25 @@
 <div class="hero_sobre">
-    <x-hero-text>
-        Conheça a Ong
-    </x-hero-text>
+    <div class="link_sobre">
+        <a href="#comeco">
+            O começo
+        </a> </br>
+        <a href="#history">
+            Nossa história
+        </a> </br>
+        <a href="#sectionEstrutura">
+            Nossa estrutura
+        </a> </br>
+        <a href="#missao">
+            Missão, Visão e Valores
+        </a>
+    </div>
+    <div class="text_hero">
+        <x-hero-text>
+            Conheça a Ong
+        </x-hero-text>
+        <h2>Quem Somos</h2>
+        <x-cat-area />
+    </div>
     <div class="hero_image">
         <img src="img/heroSobreImage.png" />
     </div>
@@ -9,11 +27,12 @@
         <div class="detail_banner">
             <x-icons path="detailBanner.svg" />
         </div>
-        <div class="inicio_content container ">
+        <div class="inicio_content container">
             <div class="container">
-                <div class="text_content ">
+                <div id="comeco" class="text_content">
                     <h2>O Começo</h2>
-                    <p>Existem muitos gatos a espera de um lar e com muito amor para oferecer. Nós fazemos essa ponte
+                    <p>Existem muitos <span> gatos a espera de um lar </span> e com muito amor para oferecer. Nós
+                        fazemos essa ponte
                         para
                         que
                         você
@@ -23,20 +42,7 @@
                     </x-button>
                 </div>
             </div>
-            <div class="link_sobre">
-                <a href="#">
-                    <p>O começo</p>
-                </a> </br>
-                <a href="#history">
-                    <p>Nossa história</p>
-                </a> </br>
-                <a href="#estrutura">
-                    <p>Nossa estrutura</p>
-                </a> </br>
-                <a href="#">
-                    <p>Missão, Visão e Valores</p>
-                </a>
-            </div>
+
             <div class="video_container">
                 <div class="thumb" id="thumb">
                     <img src="img/thumb.png" alt="Gatos">

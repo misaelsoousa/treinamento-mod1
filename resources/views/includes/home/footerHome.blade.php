@@ -34,9 +34,6 @@
             <div class="catFooter">
                 <img src="img/catFooter.png" />
             </div>
-            <div class="ellipseFooter">
-                <x-icons path="ellipseFooter.svg" />
-            </div>
         </div>
         <div class="footer_card">
             <div class="email card_content">
@@ -64,6 +61,7 @@
             </div>
         </div>
         <div class="footer_tips">
+            <img src="img/footerDetalhe.png" alt="">
             <div class="footer_mobile">
                 <h2>
                     RECEBA </br>
@@ -93,23 +91,23 @@
                     <h2>ACESSE</h2>
                     <div>
                         <x-icons path="arrowLink.svg" />
-                        <a href="#">Home</a>
+                        <a href="{{ route('home') }}">Home</a>
                     </div>
                     <div>
                         <x-icons path="arrowLink.svg" />
-                        <a href="#">Quem somos</a>
+                        <a href="{{ route('sobre') }}">Quem somos</a>
                     </div>
                     <div>
                         <x-icons path="arrowLink.svg" />
-                        <a href="#">Blog</a>
+                        <a href="{{ route('blog') }}">Blog</a>
                     </div>
                     <div>
                         <x-icons path="arrowLink.svg" />
-                        <a href="#">Encontrar gatinhos</a>
+                        <a href="{{ route('encontrar-gatinhos') }}">Encontrar gatinhos</a>
                     </div>
                     <div>
                         <x-icons path="arrowLink.svg" />
-                        <a href="#">Contato</a>
+                        <a href="{{ route('contato') }}">Contato</a>
                     </div>
                 </div>
             </div>

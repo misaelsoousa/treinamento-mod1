@@ -9,7 +9,7 @@
         <img class="line_detail" src="img/lineDetail.png">
         <div class="details_blur container">
             <div class="ong_bg">
-                <img src="img/ongBg.png" />
+                <x-icons path="ongBg.svg" />
             </div>
             <div class="apoie_content">
 

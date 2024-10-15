@@ -1,23 +1,27 @@
 <div class="detalhes">
     <div class="hero_detalhes">
-        <x-hero-text>
-            Detalhes do Tini
-        </x-hero-text>
         <div class="text_hero">
+            <x-hero-text>
+                Detalhes do Tini
+            </x-hero-text>
             <h2>Tini</h2>
             <x-cat-area />
+        </div>
+        <div id="modalSwiper" class="modal">
+            <span class="closeModal">&times;</span>
+            <img class="modal-content" id="modalImage">
         </div>
         <div class="swiper swiper_detalhes">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="img/detalhesImg.png" alt="">
-                    <div class="zoom">
+                    <div id="zoom" class="zoom">
                         <x-icons path="zoomIcone.svg" />
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="img/detalhesImg.png" alt="">
-                    <div class="zoom">
+                    <div id="zoom" class="zoom">
                         <x-icons path="zoomIcone.svg" />
                     </div>
                 </div>
@@ -25,26 +29,26 @@
                     <div class="doble_slide">
                         <img src="img/detalhesImg.png" alt="">
                         <img class="last_img" src="img/detalhesImg.png" alt="">
-                        <div class="zoom">
+                        <div id="zoom" class="zoom">
                             <x-icons path="zoomIcone.svg" />
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="img/detalhesImg.png" alt="">
-                    <div class="zoom">
+                    <div id="zoom" class="zoom">
                         <x-icons path="zoomIcone.svg" />
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="img/detalhesImg.png" alt="">
-                    <div class="zoom">
+                    <div id="zoom" class="zoom">
                         <x-icons path="zoomIcone.svg" />
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="img/detalhesImg.png" alt="">
-                    <div class="zoom">
+                    <div id="zoom" class="zoom">
                         <x-icons path="zoomIcone.svg" />
                     </div>
                 </div>
@@ -55,40 +59,47 @@
 
         </div>
 
-        <div class="container hero_description">
-            <div class="group_description">
-                <div class="first_item">
-                    <x-icons path="genderMale.svg" />
-                    <h2>Tini</h2>
-                </div>
-                <div class="card_gender">
-                    MACHO / FILHOTE
-                </div>
-                <div class="item_hero">
+        <div class="hero_description">
+
+            <div class="first_item">
+                <x-icons path="genderMale.svg" />
+                <h2>Tini</h2>
+            </div>
+            <div class="card_gender">
+                MACHO / FILHOTE
+            </div>
+            <div class="item_hero">
+                <p>
                     Carinhoso
-                    <div class="icons carinhoso">
-                        <x-icons path="heartDescricao.svg" />
-                        <x-icons path="heartDescricao.svg" />
-                        <x-icons path="heartDescricao.svg" />
-                    </div>
+                </p>
+                <div class="icons carinhoso">
+                    <x-icons path="heartDescricao.svg" />
+                    <x-icons path="heartDescricao.svg" />
+                    <x-icons path="heartDescricao.svg" />
                 </div>
             </div>
-            <div class="group_description">
-                <div class="item_hero">
+
+
+            <div class="item_hero">
+                <p>
                     Energético
-                    <div class="icons energetico">
-                        <x-icons path="energyDescricao.svg" />
-                        <x-icons path="energyDescricao.svg" />
-                        <x-icons path="energyDescricao.svg" />
-                    </div>
+                </p>
+
+                <div class="icons energetico">
+                    <x-icons path="energyDescricao.svg" />
+                    <x-icons path="energyDescricao.svg" />
+                    <x-icons path="energyDescricao.svg" />
                 </div>
-                <div class="item_hero">
+            </div>
+            <div class="item_hero">
+                <p>
                     Sociável
-                    <div class="icons">
-                        <x-icons path="pawDescricao.svg" />
-                        <x-icons path="pawDescricao.svg" />
-                        <x-icons path="pawDescricao.svg" />
-                    </div>
+                </p>
+
+                <div class="icons">
+                    <x-icons path="pawDescricao.svg" />
+                    <x-icons path="pawDescricao.svg" />
+                    <x-icons path="pawDescricao.svg" />
                 </div>
             </div>
         </div>
@@ -97,9 +108,10 @@
     <div class="detalhes_content">
         <div class="title_content">
             <div>
+                <x-icons path="locationTini.svg" />
                 <p>Osasco, São Paulo SP</p>
             </div>
-            <div>
+            <div><x-icons path="dateIcon.svg" />
                 <p>Nascimento aproximado: maio de 2017</p>
             </div>
         </div>

@@ -6,18 +6,56 @@
         background-color: #461A7E;
         position: relative;
 
+        .modal {
+            display: none;
+            position: fixed;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: auto;
+            height: 80%;
+        }
+
+        .closeModal {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
         .text_hero {
             display: flex;
             padding-bottom: 20em;
-            padding-top: 13%;
-            padding-left: calc(5% + 600px);
+            padding-top: 15%;
+            align-items: center;
 
             h2 {
+                margin-left: 35%;
+                margin-right: 10%;
                 color: #FFF;
                 font-size: 75px;
-                padding-inline: 3.5em;
                 font-family: 'SFRepublic';
                 font-weight: bold;
+                margin-bottom: 70px;
+            }
+
+            .cat_area {
+                margin-bottom: 70px;
             }
         }
 
@@ -36,15 +74,14 @@
                     height: 50px;
                     width: 50px;
                     background-color: rgba($color: #FFF, $alpha: .5);
-                    cursor: pointer;
                     border-radius: 50%;
                     display: none;
                     justify-content: center;
                     align-items: center;
+                    cursor: pointer;
 
-                    svg {
-                        z-index: 5;
-
+                    &:hover {
+                        display: flex;
                     }
                 }
 
@@ -81,7 +118,7 @@
 
             .swiper-button-next {
                 position: absolute;
-                right: calc(25% - 35px);
+                right: calc(25% - 28px);
                 height: 80px;
                 width: 30px;
                 background-color: #FFF;
@@ -99,7 +136,7 @@
 
             .swiper-button-prev {
                 position: absolute;
-                left: calc(25% - 35px);
+                left: calc(25% - 28px);
                 height: 80px;
                 width: 30px;
                 background-color: #FFF;
@@ -119,27 +156,53 @@
 
         .hero_description {
             display: flex;
-            justify-content: center;
+            margin-left: calc(20%);
             align-items: center;
             padding-block: 2em;
 
             .group_description {
+                flex-direction: row;
                 display: flex;
                 justify-content: space-between;
+                margin-left: 0;
             }
 
             div {
                 color: #FFF;
+                margin-left: 12em;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .icons {
+                display: flex;
+                flex-direction: row;
+                margin: 0 !important;
+
+                svg {
+                    margin: 0 .2em;
+                    width: 25px;
+                }
             }
 
             .first_item {
                 display: flex;
                 align-items: center;
                 margin-right: 5em;
+                flex-direction: row;
 
                 h2 {
                     padding-left: 1em;
                     font-size: 40px;
+                }
+            }
+
+            .item_hero {
+                p {
+                    margin: 0;
+                    margin-bottom: .5em;
+                    text-align: start;
+                    font-family: 'SFRepublic';
                 }
             }
 
@@ -166,6 +229,14 @@
                     path {
                         fill: #FF87F3;
                     }
+
+                    &:last-child {
+                        fill: #FFF;
+
+                        path {
+                            fill: #803A79;
+                        }
+                    }
                 }
             }
         }
@@ -180,6 +251,20 @@
             display: flex;
             position: relative;
             padding-bottom: 2em;
+
+            div {
+                display: flex;
+                align-items: center;
+
+                &:last-child {
+                    margin-left: 2em;
+                }
+            }
+
+            p {
+                margin: 0;
+                margin-left: 1em;
+            }
 
             &::after {
                 content: '';
@@ -265,8 +350,9 @@
                 font-size: 40px;
                 position: absolute;
                 left: 2em;
-                top: .5em;
+                top: inherit;
                 font-family: 'SFRepublic';
+                margin: 0 !important;
             }
 
             svg {
@@ -348,6 +434,19 @@
 
 body.dark-mode {
     .detalhes {
+        background-color: #333;
+        color: #fff;
+
+        .detalhes_content {
+            .tags_content {
+                background-color: #333;
+
+                .tags {
+                    color: #000;
+                }
+            }
+        }
+
         .hero_detalhes {
             background-color: #2D0D55;
         }
@@ -366,9 +465,23 @@ body.dark-mode {
     }
 }
 
+@media (max-width: 1440px) {
+    .detalhes {
+        .hero_detalhes {
+            .text_hero {
+                h2 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 767px) {
     .detalhes {
         .hero_detalhes {
+            margin-top: 4.8em;
+
             .hero_text_component {
                 display: none;
             }
@@ -390,7 +503,7 @@ body.dark-mode {
 
             .swiper_detalhes {
                 padding: 1em;
-                padding-bottom: 4em;
+                padding-bottom: 6em;
 
                 .swiper-slide {
                     height: inherit !important;
@@ -409,37 +522,94 @@ body.dark-mode {
                 }
 
                 .swiper-button-next {
+                    position: absolute;
+                    background-color: #461A7E;
+                    top: 75%;
                     width: 50px;
                     height: 50px;
+                    right: 50%;
+                    border: 1px solid #FFF;
+                    transform: translateX(100%);
                     border-radius: 0;
-                    position: absolute;
-                    right: 20% !important;
-                    transform: translateX(50%);
-                    background-color: #c2c2c2;
-                    top: 90% !important;
-                    border: 1px solid #330A66;
+
+                    &::after {
+                        content: '';
+                        background-image: url('../assets/icons/arrowHistory.svg');
+                        background-position: center;
+                        height: 30px;
+                        width: 30px;
+                        background-repeat: no-repeat;
+
+                    }
                 }
 
                 .swiper-button-prev {
+                    position: absolute;
+                    background-color: #FFF;
+                    border: 2px solid #FFF;
+                    top: 75%;
+                    left: 50%;
+                    transform: translateX(-100%);
                     width: 50px;
                     height: 50px;
                     border-radius: 0;
-                    position: absolute;
-                    left: 20% !important;
-                    transform: translateX(-50%);
-                    top: 90% !important;
-                    background-color: #c2c2c2;
-                    border: 1px solid #330A66;
+
+                    &::after {
+                        transform: scaleX(1);
+                        content: '';
+                        background-image: url('../assets/icons/prevHistory.svg');
+                        background-position: center;
+                        height: 30px;
+                        width: 30px;
+                        background-repeat: no-repeat;
+
+                    }
                 }
             }
 
             .hero_description {
-                display: block;
+                display: flex;
+                flex-direction: column;
                 padding: .5em;
+                margin: 0;
+                align-items: start;
+                width: 100%;
+
+                div {
+                    margin-left: 0;
+                }
 
                 .group_description {
+                    display: block;
+                    margin: 0;
+                    width: 100%;
+
+                    .first_item {
+                        display: flex;
+                        justify-content: start;
+                        margin-block: 1em;
+
+                        h2 {
+                            padding: 0;
+                            margin-left: .5em;
+                            font-size: 50px;
+                        }
+                    }
+                }
+
+                .item_hero {
+                    margin: 0;
+                    width: 100%;
                     display: flex;
-                    margin-block: 2em;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-block: 1em;
+
+                    p {
+                        font-size: 30px;
+                        margin-right: 1em;
+                        margin-bottom: 0;
+                    }
                 }
 
                 .carinhoso,
@@ -495,6 +665,10 @@ body.dark-mode {
 
                 .card_cat {
                     margin: 0;
+
+                    img {
+                        height: 300px;
+                    }
                 }
             }
         }

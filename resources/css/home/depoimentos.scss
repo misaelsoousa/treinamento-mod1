@@ -1,6 +1,8 @@
 .depoimentos {
     display: flex;
     padding-bottom: 20em;
+    z-index: 3;
+    position: relative;
 
     .review_page {
         position: relative;
@@ -10,8 +12,8 @@
 
         .review_details {
             position: absolute;
-            right: 15%;
-            top: -40%;
+            left: 10%;
+            bottom: -40%;
         }
 
         .review_title {
@@ -21,32 +23,37 @@
 
             h3 {
                 font-weight: 300;
-                color: #1A1442;
+                color: #202020;
                 font-size: 35px;
+                font-family: 'SFRepublic';
             }
 
             p {
                 width: 60%;
+                font-weight: 500;
             }
         }
     }
 
 
     .swiper_depoimentos {
-        width: 60%;
+        width: 50%;
         position: relative;
         padding-top: 10em;
+        padding-left: 3.5%;
         margin-right: 0;
-        padding-left: 5em;
 
         .swiper-slide {
             position: relative;
             padding: 50px 0;
             opacity: 0.5;
+            display: flex;
+            justify-content: center;
 
             .card {
                 width: 300px;
                 border-radius: 10px;
+                object-fit: contain;
 
                 .card_content {
                     text-align: center;
@@ -93,6 +100,7 @@
                         font-size: 15px;
                         font-weight: 100;
                         padding-bottom: 1em;
+                        color: #000;
                     }
 
                     p {
@@ -100,10 +108,16 @@
                     }
                 }
             }
+
+            &:last-child {}
         }
 
         .swiper-slide-active {
             opacity: 1;
+        }
+
+        .swiper-slide-next+.swiper-slide {
+            margin-left: 5em;
         }
 
         .swiper-slide-next {
@@ -111,7 +125,7 @@
         }
 
         .swiper-button-next {
-            right: calc(30% - 20px);
+            right: calc(15% - 20px);
             top: 60%;
 
             &::after {
@@ -124,7 +138,7 @@
         }
 
         .swiper-button-prev {
-            left: 0;
+            left: 5%;
             top: 60%;
 
             &::after {
@@ -141,12 +155,35 @@
 
 @media(max-width: 1890px) {
     .depoimentos {
+
         .swiper_depoimentos {
             padding-left: 2em;
 
             .swiper-button-next {
+                right: 0%;
+            }
+        }
+    }
+}
+
+@media(max-width: 1666px) {
+    .depoimentos {
+        .swiper_depoimentos {
+
+            .swiper-button-next {
                 right: 0;
             }
+        }
+    }
+}
+
+body.dark-mode {
+    .depoimentos {
+        background-color: #333;
+        color: #FFF;
+
+        h3 {
+            color: #FFF !important;
         }
     }
 }
@@ -179,6 +216,7 @@
             padding-left: 0;
             width: 100%;
 
+
             .review_title {
                 padding-left: 0;
                 display: flex;
@@ -198,11 +236,22 @@
 
         .swiper_depoimentos {
             width: 100%;
-            padding-left: 2.5em;
-            padding-top: 2em;
+            padding: 0;
+            padding-top: 1em;
+
+            .swiper-slide {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
 
             .swiper-button-next {
                 right: 0;
+                top: 50%;
+            }
+
+            .swiper-button-prev {
+                top: 50%;
             }
         }
 

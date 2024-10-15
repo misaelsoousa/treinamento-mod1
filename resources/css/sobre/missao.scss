@@ -233,7 +233,8 @@
             width: 100%;
 
             .left_top {
-
+                display: flex;
+                flex-direction: column;
                 display: none;
             }
 
@@ -266,6 +267,20 @@
                 h2 {
                     display: block;
                 }
+
+                .mobile_column {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+
+                    .icon_circle {
+                        margin-bottom: 0;
+                    }
+                }
+
+                p {
+                    width: 100%;
+                }
             }
 
             .mid_bottom {
@@ -284,7 +299,7 @@
             .right_bottom {
                 width: 100%;
                 display: flex;
-                flex-direction: column;
+                flex-direction: column-reverse;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
@@ -298,6 +313,22 @@
                     margin: 0;
                 }
             }
+        }
+    }
+}
+
+body.dark-mode {
+    .missao {
+        .mid_bottom {
+            background-color: #5e5e5e;
+        }
+
+        .right_top {
+            background-color: #5e5e5e;
+        }
+
+        .left_top {
+            background-color: #5e5e5e;
         }
     }
 }

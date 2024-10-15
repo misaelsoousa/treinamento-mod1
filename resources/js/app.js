@@ -9,6 +9,8 @@ import './home';
 import './sobre';
 import './blog-post';
 
+
+
 // dark mode
 const toggles = document.querySelectorAll('.toogle_dark');
 const body = document.body;
@@ -88,10 +90,31 @@ for (var i = 0; i < cookieBtns.length; i++) {
     };
 };
 
+const zoomIcon = document.querySelectorAll('#zoom');
+
+const modal = document.getElementById("modalSwiper");
+const imgModal = document.getElementById("modalImage");
+
+const span = document.getElementsByClassName("closeModal")[0];
+
+zoomIcon.forEach(img => {
+    img.addEventListener('click', function () {
+
+        const imgToOpen = this.closest('div').previousElementSibling;
 
 
+        modal.style.display = "flex";
+        imgModal.src = imgToOpen.src;
+    });
+});
 
+span.onclick = function () {
+    modal.style.display = "none";
+}
 
-
-
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 

@@ -31,7 +31,7 @@
 //contato
 @import 'contato/heroContato';
 @import 'contato/formulario';
-
+@import url('https://fonts.cdnfonts.com/css/sf-new-republic-2');
 
 @font-face {
     font-family: 'SFRepublic';
@@ -39,6 +39,36 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'LemonMilk';
+    src: url('/resources/assets/fonts/LEMONMILK-Regular.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LemonMilk';
+    src: url('/resources/assets/fonts/LEMONMILK-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LemonMilk';
+    src: url('/resources/assets/fonts/LEMONMILK-Light.otf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LemonMilk';
+    src: url('/resources/assets/fonts/LEMONMILK-Medium.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
 
 .btn_app {
     position: relative;
@@ -116,22 +146,23 @@
 }
 
 .hero_text_component {
-    position: absolute;
+    position: relative;
     color: #FFF;
-    top: 30%;
     z-index: 2;
-    left: calc(5% + 180px);
     display: flex;
     flex-direction: column;
     align-items: center;
+    white-space: nowrap;
 
     svg {
-        margin-top: 1.5em;
+        margin-top: 0;
+        width: 50px;
+        height: 50px;
     }
 
     &::after {
         content: '';
-        width: 180px;
+        width: 150%;
         height: 1px;
         background-color: #FFF;
         position: absolute;
@@ -141,7 +172,7 @@
 
     &::before {
         content: '';
-        width: 180px;
+        width: 150%;
         height: 1px;
         background-color: #FFF;
         position: absolute;
@@ -151,10 +182,11 @@
 }
 
 .toogle_title {
-    background-color: #EAEAEA;
     display: flex;
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     height: 30px;
+    object-fit: contain;
     border-radius: 25px;
     display: flex;
     align-items: center;
@@ -166,7 +198,6 @@
     }
 
     .toogle_left {
-        background-color: #53248F;
         border-radius: 25px;
         width: 50%;
         height: 80%;
@@ -174,9 +205,6 @@
         justify-content: center;
         margin-left: 5px;
 
-        p {
-            color: #FFF;
-        }
     }
 
     .toogle_right {
@@ -185,5 +213,71 @@
         height: 80%;
         display: flex;
         justify-content: center;
+    }
+}
+
+.date {
+    display: flex;
+    position: relative;
+    width: 100%;
+
+    .date_day {
+        border: 3px solid #461A7E;
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+
+        h1,
+        span {
+            margin-top: .1em;
+            font-family: 'Anek Latin';
+        }
+
+        h1 {
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+
+        span {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            letter-spacing: .5em;
+            margin-left: .5em;
+            margin-bottom: 1em;
+        }
+
+        .day_top {
+            background-color: #461A7E;
+            padding: 0;
+            width: 100%;
+            height: 50%;
+            padding: 0 2em;
+            color: #FFF;
+
+            h1 {
+                margin-top: 0;
+                font-size: 45px;
+            }
+        }
+
+        .day_bottom {
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+    .date_hour {
+        position: absolute;
+        bottom: 35px;
+        left: 170px;
     }
 }

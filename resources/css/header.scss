@@ -26,16 +26,22 @@
         border-image-slice: 1;
         padding-top: 1em;
 
+        .btn {
+            margin-bottom: -2px !important;
+            padding-bottom: 0 !important;
+            padding-right: 0 !important;
+        }
 
         .btn_adotar {
             background: transparent;
             color: #FFF;
             padding: 2em;
             border: 1px solid #FFF;
-            padding-inline: 8em;
+            padding-inline: 6em;
             cursor: pointer;
-            font-size: 12px;
+            font-size: 14px;
             display: flex;
+            border-bottom: none;
 
             svg {
                 margin-left: 1em;
@@ -50,9 +56,14 @@
         .item_navbar {
             list-style: none;
             padding-left: 2em;
+            margin-bottom: .5em;
+
+            a {
+                font-weight: 500;
+            }
 
             .link_navbar {
-                padding: 1.5em 1em;
+                padding: 1.5em 1em calc(2em + 1px) 1em;
                 text-decoration: none;
                 color: #fff;
                 border-radius: 10px 10px 0 0;
@@ -266,6 +277,7 @@ body.dark-mode {
     position: fixed;
     background-color: #53248F;
     width: 100%;
+    align-items: center;
 
     .logo_navbar {
         display: none;
@@ -273,21 +285,43 @@ body.dark-mode {
 
     .navbar_scroll {
         display: block;
-        padding: 1em;
+        position: absolute;
+        left: 2%;
     }
+
 
     .navbar {
         border: none;
-
+        padding: 0;
 
         .btn_adotar {
             margin-right: 3em;
+        }
+
+        .item_navbar {
+            margin: 0;
+        }
+
+        .btn_adotar {
+            border-bottom: 1px solid #FFF;
+            font-size: 12px;
+            margin-block: .5em;
         }
     }
 }
 
 .show {
-    background-color: #53248F;
+    background-color: #FFF;
+
+    div {
+
+        li {
+
+            a {
+                color: #000 !important;
+            }
+        }
+    }
 }
 
 .navbar_mobile {

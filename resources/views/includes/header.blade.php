@@ -1,11 +1,16 @@
 <nav class="navbar_content">
     <div class="logo_navbar">
-        <x-icons path="logo.svg" />
+        <a class="link_navbar" href="{{ route('home') }}">
+            <x-icons path="logo.svg" />
+        </a>
     </div>
     <ul class="navbar container">
         <div class="navbar_scroll">
-            <x-icons path="logoNavbar.svg" />
+            <a class="link_navbar" href="{{ route('home') }}">
+                <x-icons path="logoNavbar.svg" />
+            </a>
         </div>
+
         <li class="item_navbar">
             <a class="link_navbar" href="{{ route('home') }}">Home</a>
         </li>
@@ -49,11 +54,12 @@
             </label>
         </li>
 
-        <li class="item_navbar">
+        <li class="item_navbar btn">
             <button class="btn_adotar">Quero Adotar um gatinho
                 <x-icons path="paw.svg" />
             </button>
         </li>
+
     </ul>
 
 </nav>

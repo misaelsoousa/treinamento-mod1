@@ -1,5 +1,7 @@
 <div class="adocao">
-    <img class="list_detail" src="img/listDetail.png" />
+    <div class="list_detail">
+        <x-icons path="listDetail.svg" />
+    </div>
     <div class="adocao_content container">
         <nav class="navbar_adocao container">
             <ul>
@@ -37,7 +39,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <div class="item_list" data-cidade="São Vicente">
                     <div class="img_list">
@@ -119,10 +120,11 @@
 
             </div>
             <div class="list_content">
-
-                <x-button>
-                    Ver todos os gatinhos
-                </x-button>
+                <a href="{{ route('encontrar-gatinhos') }}">
+                    <x-button>
+                        Ver todos os gatinhos
+                    </x-button>
+                </a>
             </div>
         </div>
     </div>

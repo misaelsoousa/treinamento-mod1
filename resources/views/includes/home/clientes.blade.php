@@ -1,8 +1,32 @@
 <div class="clientes">
+    <div class="swiper swiper_clientes_mobile">
+        <div class="title_clientes">
+            <h2>Nossos Clientes</h2>
+            <p>Clientes que comprovam a </br> qualidade da casa da gráfica</p>
+        </div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/enem.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="img/papiro.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="img/universitario.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="img/saoBartolomeu.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="img/daVinci.png" />
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
     <div class="swiper swiper_clientes">
         <div class="title_clientes">
             <h2>Nossos Clientes</h2>
-            <p>Clientes que comprovam a qualidade da casa da gráfica</p>
+            <p>Clientes que comprovam a </br> qualidade da casa da gráfica</p>
         </div>
         <div class="swiper-wrapper">
             <div class="swiper-slide">
